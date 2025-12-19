@@ -162,61 +162,56 @@
             align-items: center;
         }
 
+        /* Logo */
         .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
         }
 
-        .logo span {
-            color: var(--secondary-color);
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            align-items: center;
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 8px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
         }
 
-        nav a {
+        nav > ul > li > a {
             font-weight: 500;
             color: var(--text-dark);
-            padding: 10px 0;
-            position: relative;
+            padding: 10px 12px;
+            display: block;
+            white-space: nowrap;
+            font-size: 14px;
         }
 
-        nav a:hover {
+        nav > ul > li > a:hover {
             color: var(--primary-color);
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary-color);
-            transition: var(--transition);
-        }
-
-        nav a:hover::after {
-            width: 100%;
         }
 
         .nav-cta {
             background: var(--primary-color);
             color: white !important;
-            padding: 12px 24px !important;
+            padding: 10px 20px !important;
             border-radius: var(--border-radius);
+            font-size: 14px !important;
         }
 
         .nav-cta:hover {
             background: var(--primary-dark);
-        }
-
-        .nav-cta::after {
-            display: none;
         }
 
         .mobile-menu-btn {
@@ -226,17 +221,7 @@
             font-size: 24px;
             cursor: pointer;
             color: var(--primary-color);
-        }
-
-        /* Logo Image */
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 50px;
-            width: auto;
+            padding: 5px;
         }
 
         /* Dropdown Menu */
@@ -250,12 +235,8 @@
             gap: 5px;
         }
 
-        .nav-dropdown > a::after {
-            display: none;
-        }
-
         .dropdown-arrow {
-            font-size: 10px;
+            font-size: 8px;
             transition: var(--transition);
         }
 
@@ -265,14 +246,14 @@
 
         .dropdown-menu {
             position: absolute;
-            top: 100%;
+            top: calc(100% + 5px);
             left: 50%;
             transform: translateX(-50%);
             background: var(--bg-white);
-            min-width: 200px;
+            min-width: 180px;
             box-shadow: var(--shadow-lg);
             border-radius: var(--border-radius);
-            padding: 10px 0;
+            padding: 8px 0;
             opacity: 0;
             visibility: hidden;
             transition: var(--transition);
@@ -290,10 +271,11 @@
 
         .dropdown-menu a {
             display: block;
-            padding: 10px 20px;
+            padding: 10px 16px;
             color: var(--text-dark);
             font-weight: 500;
             white-space: nowrap;
+            font-size: 14px;
         }
 
         .dropdown-menu a:hover {
@@ -852,8 +834,24 @@
             }
         }
 
+        @media (max-width: 1024px) {
+            nav > ul {
+                gap: 4px;
+            }
+
+            nav > ul > li > a {
+                padding: 8px 8px;
+                font-size: 13px;
+            }
+
+            .nav-cta {
+                padding: 8px 14px !important;
+                font-size: 13px !important;
+            }
+        }
+
         @media (max-width: 768px) {
-            nav ul {
+            nav > ul {
                 display: none;
                 position: absolute;
                 top: 100%;
@@ -861,26 +859,66 @@
                 right: 0;
                 background: var(--bg-white);
                 flex-direction: column;
-                padding: 20px;
-                box-shadow: var(--shadow);
+                padding: 15px 20px;
+                box-shadow: var(--shadow-lg);
                 gap: 0;
             }
 
-            nav ul.active {
+            nav > ul.active {
                 display: flex;
             }
 
-            nav li {
+            nav > ul > li {
                 border-bottom: 1px solid #eee;
+                width: 100%;
             }
 
-            nav a {
+            nav > ul > li:last-child {
+                border-bottom: none;
+                padding-top: 10px;
+            }
+
+            nav > ul > li > a {
                 display: block;
-                padding: 15px 0;
+                padding: 12px 0;
+                font-size: 15px;
+            }
+
+            .nav-cta {
+                text-align: center;
+                padding: 12px 20px !important;
+                font-size: 15px !important;
             }
 
             .mobile-menu-btn {
                 display: block;
+            }
+
+            /* Mobile dropdown */
+            .nav-dropdown > a {
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .dropdown-menu {
+                position: static;
+                transform: none;
+                box-shadow: none;
+                background: var(--bg-light);
+                border-radius: 0;
+                padding: 0;
+                opacity: 1;
+                visibility: visible;
+                display: none;
+                margin-top: 5px;
+            }
+
+            .nav-dropdown.active .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-menu a {
+                padding: 10px 20px;
             }
 
             .hero {
@@ -1285,6 +1323,16 @@
         function toggleMenu() {
             document.getElementById('nav-menu').classList.toggle('active');
         }
+
+        // Mobile dropdown toggle
+        document.querySelectorAll('.nav-dropdown > a').forEach(function(dropdownLink) {
+            dropdownLink.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('active');
+                }
+            });
+        });
     </script>
 
     <!-- Popup Form Embed (for CTA buttons) -->
