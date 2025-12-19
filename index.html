@@ -1032,33 +1032,16 @@
     </section>
 
     <!-- ============================================
-         TESTIMONIALS
+         REVIEWS
     ============================================ -->
-    <section class="testimonials">
+    <section class="reviews">
         <div class="container">
             <div class="section-header">
                 <h2>What Our Customers Say</h2>
                 <p>Don't just take our word for it — hear from homeowners in {{CITY}} who trust us with their trees.</p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <blockquote>"Excellent service from start to finish! The crew was professional, efficient, and left our yard spotless. Highly recommend {{BUSINESS_NAME}} for any tree work."</blockquote>
-                    <div class="testimonial-author">John D.</div>
-                    <div class="testimonial-location">{{CITY}}, {{STATE}}</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <blockquote>"They removed a huge oak tree from our backyard safely and quickly. Fair pricing and great communication throughout the process. Will definitely use them again!"</blockquote>
-                    <div class="testimonial-author">Sarah M.</div>
-                    <div class="testimonial-location">{{AREA_1}}, {{STATE}}</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <blockquote>"Called for emergency service after a storm brought down a tree on our driveway. They were there within hours and handled everything professionally. True lifesavers!"</blockquote>
-                    <div class="testimonial-author">Mike R.</div>
-                    <div class="testimonial-location">{{AREA_2}}, {{STATE}}</div>
-                </div>
+            <div class="reviews-widget">
+                {{REVIEWS_WIDGET_EMBED}}
             </div>
         </div>
     </section>
@@ -1153,24 +1136,7 @@
 
                 <div class="contact-form">
                     <h3>Get Your Free Estimate</h3>
-                    <iframe
-                        src="https://api.leadconnectorhq.com/widget/form/eEjBKbIPWysdHKzXGN2D"
-                        style="width:100%;height:739px;border:none;border-radius:4px"
-                        id="inline-eEjBKbIPWysdHKzXGN2D"
-                        data-layout="{'id':'INLINE'}"
-                        data-trigger-type="alwaysShow"
-                        data-trigger-value=""
-                        data-activation-type="alwaysActivated"
-                        data-activation-value=""
-                        data-deactivation-type="neverDeactivate"
-                        data-deactivation-value=""
-                        data-form-name="Appointment Booking Form address"
-                        data-height="739"
-                        data-layout-iframe-id="inline-eEjBKbIPWysdHKzXGN2D"
-                        data-form-id="eEjBKbIPWysdHKzXGN2D"
-                        title="Appointment Booking Form address"
-                    ></iframe>
-                    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+                    {{INLINE_FORM_EMBED}}
                 </div>
             </div>
         </div>
@@ -1235,5 +1201,8 @@
             document.getElementById('nav-menu').classList.toggle('active');
         }
     </script>
+
+    <!-- Popup Form Embed (for CTA buttons) -->
+    {{POPUP_FORM_EMBED}}
 </body>
 </html>

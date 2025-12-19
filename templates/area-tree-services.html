@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Services in {{AREA}}, {{STATE}} | {{BUSINESS_NAME}}</title>
+    <meta name="description" content="Professional tree services in {{AREA}}, {{STATE}}. Tree removal, pruning, stump grinding & land clearing. Licensed & insured arborists. Call {{PHONE}} for free estimate!">
+    <meta name="keywords" content="tree service {{AREA}}, tree removal {{AREA}} {{STATE}}, tree trimming {{AREA}}, stump grinding {{AREA}}, arborist {{AREA}}, tree cutting {{AREA}}, tree care {{AREA}} {{STATE}}, emergency tree service {{AREA}}">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="US-{{STATE}}">
+    <meta name="geo.placename" content="{{AREA}}">
+    <link rel="canonical" href="{{AREA_SLUG}}-tree-services.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tree Services in {{AREA}}, {{STATE}} | {{BUSINESS_NAME}}">
+    <meta property="og:description" content="Professional tree removal, pruning, stump grinding & land clearing in {{AREA}}. Licensed & insured. Free estimates!">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org LocalBusiness Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "{{BUSINESS_NAME}}",
+        "description": "Professional tree services in {{AREA}}, {{STATE}} including tree removal, pruning, stump grinding, and land clearing.",
+        "telephone": "{{PHONE}}",
+        "email": "{{EMAIL}}",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "{{AREA}}",
+            "addressRegion": "{{STATE}}",
+            "addressCountry": "US"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "{{AREA}}"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Tree Services in {{AREA}}",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tree Removal in {{AREA}}"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tree Pruning in {{AREA}}"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stump Grinding in {{AREA}}"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Land Clearing in {{AREA}}"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Tree Service in {{AREA}}"}}
+            ]
+        },
+        "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #2d5a27;
+            --primary-dark: #1e3d1a;
+            --secondary-color: #8b4513;
+            --accent-color: #f4a460;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f9f9f9;
+            --bg-white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header { background: var(--bg-white); box-shadow: var(--shadow); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .header-top { background: var(--primary-dark); color: white; padding: 8px 0; font-size: 14px; }
+        .header-top .container { display: flex; justify-content: space-between; align-items: center; }
+        .header-top a { color: white; }
+        .header-top a:hover { color: var(--accent-color); }
+        .header-main { padding: 15px 0; }
+        .header-main .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 700; color: var(--primary-color); }
+        nav ul { display: flex; list-style: none; gap: 25px; }
+        nav a { font-weight: 500; color: var(--text-dark); }
+        nav a:hover { color: var(--primary-color); }
+        .nav-cta { background: var(--primary-color); color: white !important; padding: 10px 20px; border-radius: var(--border-radius); }
+        .nav-cta:hover { background: var(--primary-dark); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 24px; cursor: pointer; }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.9), rgba(30, 61, 26, 0.95));
+            color: white;
+            padding: 160px 0 80px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 42px; margin-bottom: 20px; }
+        .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 30px; opacity: 0.95; }
+        .btn { display: inline-block; padding: 15px 35px; border-radius: var(--border-radius); font-weight: 600; cursor: pointer; transition: var(--transition); }
+        .btn-primary { background: var(--accent-color); color: var(--text-dark); }
+        .btn-primary:hover { background: #e8944a; transform: translateY(-2px); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        .btn-secondary:hover { background: white; color: var(--primary-color); }
+        .hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+        /* Breadcrumb */
+        .breadcrumb { background: var(--bg-light); padding: 15px 0; font-size: 14px; }
+        .breadcrumb a { color: var(--primary-color); }
+        .breadcrumb span { color: var(--text-light); }
+
+        /* Sections */
+        .section { padding: 70px 0; }
+        .section-light { background: var(--bg-light); }
+        .section-header { text-align: center; margin-bottom: 40px; }
+        .section-header h2 { font-size: 32px; color: var(--primary-color); margin-bottom: 15px; }
+        .section-header p { color: var(--text-light); max-width: 600px; margin: 0 auto; }
+
+        /* Services Grid */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            padding: 35px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .service-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
+        .service-icon { font-size: 50px; margin-bottom: 20px; }
+        .service-card h3 { font-size: 22px; color: var(--primary-color); margin-bottom: 15px; }
+        .service-card p { color: var(--text-light); margin-bottom: 20px; }
+        .service-card a { color: var(--primary-color); font-weight: 600; }
+        .service-card a:hover { color: var(--primary-dark); }
+
+        /* Content */
+        .content-section { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; }
+        .content-main h2 { font-size: 28px; color: var(--primary-color); margin-bottom: 20px; }
+        .content-main h3 { font-size: 22px; color: var(--primary-color); margin: 25px 0 15px; }
+        .content-main p { color: var(--text-light); margin-bottom: 15px; line-height: 1.8; }
+        .content-main ul { margin: 20px 0; padding-left: 25px; }
+        .content-main li { margin-bottom: 10px; color: var(--text-light); }
+        .content-sidebar {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+        .content-sidebar h3 { font-size: 22px; color: var(--primary-color); margin-bottom: 15px; }
+
+        /* Why Choose Us */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .feature-card { background: var(--bg-white); padding: 25px; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center; }
+        .feature-icon { font-size: 40px; margin-bottom: 15px; }
+        .feature-card h3 { font-size: 18px; color: var(--primary-color); margin-bottom: 10px; }
+        .feature-card p { color: var(--text-light); font-size: 14px; }
+
+        /* CTA */
+        .cta-section { background: linear-gradient(135deg, var(--secondary-color), #6b3410); color: white; padding: 60px 0; text-align: center; }
+        .cta-section h2 { font-size: 32px; margin-bottom: 15px; }
+        .cta-section p { margin-bottom: 25px; opacity: 0.95; }
+        .cta-phone { font-size: 28px; font-weight: 700; display: block; margin-bottom: 20px; }
+        .cta-phone:hover { color: var(--accent-color); }
+
+        /* Reviews */
+        .reviews-section { padding: 70px 0; background: var(--bg-light); }
+        .reviews-widget { max-width: 900px; margin: 0 auto; }
+
+        /* Footer */
+        footer { background: var(--text-dark); color: white; padding: 50px 0 25px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+        .footer-section h4 { font-size: 16px; margin-bottom: 15px; color: var(--accent-color); }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 8px; }
+        .footer-section a { color: rgba(255,255,255,0.7); }
+        .footer-section a:hover { color: white; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; color: rgba(255,255,255,0.6); font-size: 14px; }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .content-section { grid-template-columns: 1fr; }
+            .content-sidebar { position: static; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            nav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-white); flex-direction: column; padding: 20px; box-shadow: var(--shadow); }
+            nav ul.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .hero h1 { font-size: 32px; }
+            .header-top .container { flex-direction: column; gap: 5px; }
+        }
+        @media (max-width: 480px) {
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <span>Serving {{AREA}}, {{STATE}} & Surrounding Areas</span>
+                <a href="tel:{{PHONE}}">Call Now: {{PHONE}}</a>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">{{BUSINESS_NAME}}</a>
+                <nav>
+                    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency</a></li>
+                        <li><a href="tel:{{PHONE}}" class="nav-cta">Free Estimate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Tree Services in {{AREA}}, {{STATE}}</h1>
+            <p>{{BUSINESS_NAME}} provides expert tree removal, tree trimming, stump grinding, and land clearing services to homeowners and businesses in {{AREA}} and surrounding {{STATE}} communities. Licensed, insured, and committed to excellence.</p>
+            <div class="hero-btns">
+                <a href="tel:{{PHONE}}" class="btn btn-primary">Get Free Estimate</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> <span> / Tree Services in {{AREA}}</span>
+        </div>
+    </div>
+
+    <!-- Services Grid -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tree Services in {{AREA}}, {{STATE}}</h2>
+                <p>Comprehensive tree care solutions for residential and commercial properties in {{AREA}}.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🪓</div>
+                    <h3>Tree Removal in {{AREA}}</h3>
+                    <p>Safe and efficient tree removal for {{AREA}} properties. We handle dead, damaged, or unwanted trees of all sizes with precision and care.</p>
+                    <a href="{{AREA_SLUG}}-tree-removal.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Tree Pruning in {{AREA}}</h3>
+                    <p>Professional tree trimming and pruning services in {{AREA}}. Crown thinning, shaping, deadwood removal, and health maintenance.</p>
+                    <a href="{{AREA_SLUG}}-tree-pruning.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌲</div>
+                    <h3>Stump Grinding in {{AREA}}</h3>
+                    <p>Complete stump removal services for {{AREA}} homeowners. Reclaim your yard space and eliminate tripping hazards.</p>
+                    <a href="{{AREA_SLUG}}-stump-grinding.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚜</div>
+                    <h3>Land Clearing in {{AREA}}</h3>
+                    <p>Efficient lot clearing and brush removal for {{AREA}} construction and landscaping projects. Site preparation specialists.</p>
+                    <a href="{{AREA_SLUG}}-land-clearing.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚨</div>
+                    <h3>Emergency Tree Service in {{AREA}}</h3>
+                    <p>24/7 emergency tree removal in {{AREA}}. Fast response for storm damage, fallen trees, and hazardous situations.</p>
+                    <a href="{{AREA_SLUG}}-emergency-tree-service.html">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Area Service -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="content-section">
+                <div class="content-main">
+                    <h2>Your Trusted Tree Service Company in {{AREA}}, {{STATE}}</h2>
+                    <p>When you need professional tree care in {{AREA}}, {{BUSINESS_NAME}} is the name to trust. Our team of experienced arborists and tree care professionals have been serving {{AREA}} and the surrounding {{STATE}} communities with top-quality tree services.</p>
+
+                    <p>We understand the unique challenges that trees in {{AREA}} face, from seasonal weather patterns to local soil conditions. Whether you're dealing with a hazardous tree that needs removal, overgrown branches requiring pruning, or unsightly stumps that need grinding, our crew has the expertise and equipment to handle any tree care challenge.</p>
+
+                    <h3>Why {{AREA}} Residents Choose Us</h3>
+                    <ul>
+                        <li><strong>Local Expertise:</strong> We know {{AREA}}'s trees, climate, and regulations</li>
+                        <li><strong>Licensed & Insured:</strong> Full liability and workers' compensation coverage</li>
+                        <li><strong>Free Estimates:</strong> No-obligation quotes for all {{AREA}} tree services</li>
+                        <li><strong>24/7 Emergency Response:</strong> Available around the clock for urgent tree situations</li>
+                        <li><strong>Complete Cleanup:</strong> We leave your {{AREA}} property spotless</li>
+                        <li><strong>Fair Pricing:</strong> Competitive rates with no hidden fees</li>
+                    </ul>
+
+                    <h3>Serving All of {{AREA}} and Nearby Communities</h3>
+                    <p>From residential neighborhoods to commercial properties, we provide comprehensive tree services throughout {{AREA}}, {{STATE}}. Our service area extends to surrounding communities, ensuring homeowners and businesses across the region have access to professional tree care.</p>
+
+                    <p>No job is too big or too small for our {{AREA}} tree service team. Whether you need a single tree removed or an entire lot cleared, we have the manpower and machinery to complete your project safely and efficiently.</p>
+                </div>
+
+                <div class="content-sidebar">
+                    <h3>Get Your Free Estimate</h3>
+                    {{INLINE_FORM_EMBED}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose {{BUSINESS_NAME}} in {{AREA}}?</h2>
+                <p>The preferred tree service provider for {{AREA}}, {{STATE}} homeowners and businesses.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Certified Arborists</h3>
+                    <p>Our team includes trained professionals with extensive expertise in tree care for {{AREA}}.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Fully Insured</h3>
+                    <p>Complete liability and workers' comp insurance protects you and your {{AREA}} property.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Free Estimates</h3>
+                    <p>No-obligation quotes with transparent pricing for all {{AREA}} tree service projects.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>24/7 Emergency</h3>
+                    <p>Round-the-clock emergency service for {{AREA}} storm damage and hazardous trees.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧹</div>
+                    <h3>Complete Cleanup</h3>
+                    <p>We leave your {{AREA}} property clean and tidy. All debris removed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Locally Trusted</h3>
+                    <p>Proudly serving {{AREA}} and nearby {{STATE}} communities with excellent service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What {{AREA}} Customers Say</h2>
+                <p>See why homeowners in {{AREA}}, {{STATE}} trust us with their tree care needs.</p>
+            </div>
+            <div class="reviews-widget">
+                {{REVIEWS_WIDGET_EMBED}}
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Need Tree Services in {{AREA}}?</h2>
+            <p>Contact us today for a free, no-obligation estimate on your tree service needs in {{AREA}}, {{STATE}}.</p>
+            <a href="tel:{{PHONE}}" class="cta-phone">{{PHONE}}</a>
+            <a href="#contact" class="btn btn-primary">Request Free Estimate</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4 style="font-size:20px;margin-bottom:15px;">{{BUSINESS_NAME}}</h4>
+                    <p style="color:rgba(255,255,255,0.7);margin-bottom:15px;">Professional tree services for {{AREA}}, {{STATE}} and surrounding areas. Licensed, insured, and committed to excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="{{AREA_SLUG}}-tree-removal.html">Tree Removal</a></li>
+                        <li><a href="{{AREA_SLUG}}-tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="{{AREA_SLUG}}-stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="{{AREA_SLUG}}-land-clearing.html">Land Clearing</a></li>
+                        <li><a href="{{AREA_SLUG}}-emergency-tree-service.html">Emergency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li><a href="index.html">{{CITY}}</a></li>
+                        <li><a href="{{AREA_1_SLUG}}-tree-services.html">{{AREA_1}}</a></li>
+                        <li><a href="{{AREA_2_SLUG}}-tree-services.html">{{AREA_2}}</a></li>
+                        <li><a href="{{AREA_3_SLUG}}-tree-services.html">{{AREA_3}}</a></li>
+                        <li><a href="{{AREA_4_SLUG}}-tree-services.html">{{AREA_4}}</a></li>
+                        <li><a href="{{AREA_5_SLUG}}-tree-services.html">{{AREA_5}}</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:{{PHONE}}">{{PHONE}}</a></li>
+                        <li><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+                        <li>{{AREA}}, {{STATE}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 {{BUSINESS_NAME}}. All rights reserved. | Serving {{AREA}}, {{STATE}}</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+    </script>
+
+    <!-- Popup Form Embed (for CTA buttons) -->
+    {{POPUP_FORM_EMBED}}
+</body>
+</html>
