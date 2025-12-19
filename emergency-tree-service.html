@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 Emergency Tree Service in {{CITY}}, {{STATE}} | {{BUSINESS_NAME}}</title>
+    <meta name="description" content="24/7 emergency tree service in {{CITY}}, {{STATE}}. Storm damage, fallen trees, hazardous situations. Fast response, licensed & insured. Call {{PHONE}} now!">
+    <meta name="keywords" content="emergency tree service {{CITY}}, 24 hour tree removal, storm damage tree removal, fallen tree removal near me, {{CITY}} {{STATE}} emergency arborist">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="emergency-tree-service.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Emergency Tree Service",
+        "serviceType": "Emergency Tree Service",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "{{BUSINESS_NAME}}",
+            "telephone": "{{PHONE}}",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
+            }
+        },
+        "areaServed": {"@type": "City", "name": "{{CITY}}"},
+        "description": "24/7 emergency tree removal and storm damage response services."
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #2d5a27;
+            --primary-dark: #1e3d1a;
+            --secondary-color: #8b4513;
+            --accent-color: #f4a460;
+            --emergency-color: #dc3545;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f9f9f9;
+            --bg-white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text-dark); }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--bg-white); box-shadow: var(--shadow); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .header-top { background: var(--emergency-color); color: white; padding: 8px 0; font-size: 14px; }
+        .header-top .container { display: flex; justify-content: space-between; align-items: center; }
+        .header-top a { color: white; }
+        .header-top a:hover { opacity: 0.9; }
+        .header-main { padding: 15px 0; }
+        .header-main .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 700; color: var(--primary-color); }
+        nav ul { display: flex; list-style: none; gap: 25px; }
+        nav a { font-weight: 500; color: var(--text-dark); }
+        nav a:hover { color: var(--primary-color); }
+        .nav-cta { background: var(--emergency-color); color: white !important; padding: 10px 20px; border-radius: var(--border-radius); }
+        .nav-cta:hover { background: #c82333; }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 24px; cursor: pointer; }
+        .hero { background: linear-gradient(135deg, rgba(220, 53, 69, 0.9), rgba(139, 69, 19, 0.95)); color: white; padding: 160px 0 80px; text-align: center; }
+        .hero h1 { font-size: 42px; margin-bottom: 20px; }
+        .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 30px; opacity: 0.95; }
+        .btn { display: inline-block; padding: 15px 35px; border-radius: var(--border-radius); font-weight: 600; cursor: pointer; transition: var(--transition); }
+        .btn-emergency { background: white; color: var(--emergency-color); font-size: 18px; }
+        .btn-emergency:hover { background: #f8f9fa; transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+        .btn-primary { background: var(--accent-color); color: var(--text-dark); }
+        .btn-primary:hover { background: #e8944a; }
+        .hero-phone { font-size: 36px; font-weight: 700; display: block; margin-bottom: 25px; }
+        .hero-phone:hover { opacity: 0.9; }
+        .emergency-banner { background: var(--emergency-color); color: white; padding: 25px 0; text-align: center; }
+        .emergency-banner h2 { font-size: 24px; margin-bottom: 10px; }
+        .emergency-banner p { opacity: 0.95; }
+        .breadcrumb { background: var(--bg-light); padding: 15px 0; font-size: 14px; }
+        .breadcrumb a { color: var(--primary-color); }
+        .section { padding: 70px 0; }
+        .section-light { background: var(--bg-light); }
+        .section-header { text-align: center; margin-bottom: 40px; }
+        .section-header h2 { font-size: 32px; color: var(--primary-color); margin-bottom: 15px; }
+        .section-header p { color: var(--text-light); max-width: 600px; margin: 0 auto; }
+        .service-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; }
+        .service-main h2 { font-size: 28px; color: var(--primary-color); margin-bottom: 20px; }
+        .service-main p { color: var(--text-light); margin-bottom: 20px; }
+        .service-main ul { margin: 20px 0; padding-left: 25px; }
+        .service-main li { margin-bottom: 10px; color: var(--text-light); }
+        .service-sidebar { background: var(--emergency-color); color: white; padding: 30px; border-radius: var(--border-radius); height: fit-content; position: sticky; top: 120px; }
+        .service-sidebar h3 { font-size: 24px; margin-bottom: 15px; }
+        .service-sidebar p { margin-bottom: 20px; opacity: 0.95; }
+        .sidebar-phone { display: block; font-size: 28px; font-weight: 700; color: white; margin-bottom: 20px; background: rgba(255,255,255,0.2); padding: 15px; border-radius: var(--border-radius); text-align: center; }
+        .sidebar-phone:hover { background: rgba(255,255,255,0.3); }
+        .emergency-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+        .emergency-card { background: var(--bg-white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center; border-top: 4px solid var(--emergency-color); }
+        .emergency-icon { font-size: 45px; margin-bottom: 15px; }
+        .emergency-card h3 { font-size: 18px; color: var(--primary-color); margin-bottom: 10px; }
+        .emergency-card p { color: var(--text-light); font-size: 14px; }
+        .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .step-card { text-align: center; padding: 30px 20px; background: var(--bg-white); border-radius: var(--border-radius); box-shadow: var(--shadow); }
+        .step-num { width: 50px; height: 50px; background: var(--emergency-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 700; margin: 0 auto 15px; }
+        .step-card h3 { font-size: 17px; color: var(--primary-color); margin-bottom: 10px; }
+        .step-card p { font-size: 14px; color: var(--text-light); }
+        .safety-tips { background: #fff3cd; border: 1px solid #ffc107; border-radius: var(--border-radius); padding: 30px; margin-top: 30px; }
+        .safety-tips h3 { color: #856404; margin-bottom: 15px; font-size: 20px; }
+        .safety-tips ul { padding-left: 20px; }
+        .safety-tips li { margin-bottom: 8px; color: #856404; }
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: var(--bg-white); border-radius: var(--border-radius); margin-bottom: 15px; box-shadow: var(--shadow); overflow: hidden; }
+        .faq-question { padding: 20px 25px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question:hover { background: var(--bg-light); }
+        .faq-answer { padding: 0 25px 20px; color: var(--text-light); display: none; }
+        .faq-item.active .faq-answer { display: block; }
+        .faq-toggle { font-size: 24px; transition: var(--transition); }
+        .faq-item.active .faq-toggle { transform: rotate(45deg); }
+        .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .related-card { background: var(--bg-white); padding: 25px; border-radius: var(--border-radius); text-align: center; box-shadow: var(--shadow); transition: var(--transition); }
+        .related-card:hover { transform: translateY(-5px); }
+        .related-card h3 { font-size: 16px; color: var(--primary-color); margin-bottom: 10px; }
+        .related-card a { color: var(--primary-color); font-weight: 600; font-size: 14px; }
+        .cta-section { background: var(--emergency-color); color: white; padding: 60px 0; text-align: center; }
+        .cta-section h2 { font-size: 32px; margin-bottom: 15px; }
+        .cta-section p { margin-bottom: 25px; opacity: 0.95; }
+        .cta-phone { font-size: 36px; font-weight: 700; display: block; margin-bottom: 20px; }
+        .cta-phone:hover { opacity: 0.9; }
+        footer { background: var(--text-dark); color: white; padding: 50px 0 25px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+        .footer-section h4 { font-size: 16px; margin-bottom: 15px; color: var(--accent-color); }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 8px; }
+        .footer-section a { color: rgba(255,255,255,0.7); }
+        .footer-section a:hover { color: white; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; color: rgba(255,255,255,0.6); font-size: 14px; }
+        @media (max-width: 992px) {
+            .service-content { grid-template-columns: 1fr; }
+            .service-sidebar { position: static; }
+            .emergency-grid { grid-template-columns: repeat(2, 1fr); }
+            .steps-grid { grid-template-columns: repeat(2, 1fr); }
+            .related-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            nav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-white); flex-direction: column; padding: 20px; box-shadow: var(--shadow); }
+            nav ul.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .hero h1 { font-size: 32px; }
+            .hero-phone { font-size: 28px; }
+            .emergency-grid, .steps-grid { grid-template-columns: 1fr; }
+            .header-top .container { flex-direction: column; gap: 5px; }
+        }
+        @media (max-width: 480px) {
+            .related-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <span>🚨 24/7 EMERGENCY SERVICE AVAILABLE</span>
+                <a href="tel:{{PHONE}}">CALL NOW: {{PHONE}}</a>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">{{BUSINESS_NAME}}</a>
+                <nav>
+                    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency</a></li>
+                        <li><a href="tel:{{PHONE}}" class="nav-cta">🚨 Call Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>24/7 Emergency Tree Service</h1>
+            <p>Storm damage? Fallen tree? Hazardous situation? We're here when you need us most. Fast response, professional service, any time of day or night.</p>
+            <a href="tel:{{PHONE}}" class="hero-phone">{{PHONE}}</a>
+            <a href="tel:{{PHONE}}" class="btn btn-emergency">🚨 Call For Immediate Help</a>
+        </div>
+    </section>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> <span> / Emergency Tree Service</span>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-main">
+                    <h2>Emergency Tree Services When You Need Them</h2>
+                    <p>Tree emergencies don't wait for business hours. When a storm brings down a tree on your home, a large limb threatens your family's safety, or you're dealing with any urgent tree situation, {{BUSINESS_NAME}} is ready to respond 24 hours a day, 7 days a week.</p>
+                    <p>Our emergency crews are equipped to handle the most challenging situations safely and efficiently. We understand the stress and danger that fallen trees and storm damage create, and we work quickly to secure your property and restore your peace of mind.</p>
+
+                    <h2>Emergency Situations We Handle</h2>
+                    <ul>
+                        <li><strong>Storm Damage:</strong> Trees and limbs downed by high winds, ice, or severe weather.</li>
+                        <li><strong>Trees on Structures:</strong> Fallen trees on homes, garages, vehicles, or other buildings.</li>
+                        <li><strong>Blocking Access:</strong> Trees blocking driveways, roads, or emergency access routes.</li>
+                        <li><strong>Hanging Limbs:</strong> Dangerous branches that could fall at any moment.</li>
+                        <li><strong>Leaning Trees:</strong> Trees threatening to fall due to root damage or soil erosion.</li>
+                        <li><strong>Power Line Hazards:</strong> Trees or limbs near or on power lines (we coordinate with utility companies).</li>
+                        <li><strong>Uprooted Trees:</strong> Trees with exposed root systems that pose falling risks.</li>
+                    </ul>
+
+                    <div class="safety-tips">
+                        <h3>⚠️ Stay Safe Until We Arrive</h3>
+                        <ul>
+                            <li>Stay away from fallen trees and downed power lines</li>
+                            <li>Do not attempt to remove trees or limbs yourself</li>
+                            <li>Keep family members and pets at a safe distance</li>
+                            <li>If a tree is on your home, evacuate if there's structural damage</li>
+                            <li>Document damage with photos for insurance purposes</li>
+                            <li>Call 911 if anyone is injured or there's immediate danger</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-sidebar">
+                    <h3>🚨 Need Help Now?</h3>
+                    <p>Our emergency crews are standing by 24/7 to respond to urgent tree situations.</p>
+                    <a href="tel:{{PHONE}}" class="sidebar-phone">{{PHONE}}</a>
+                    <p style="font-size: 14px; text-align: center;">Available 24 hours a day<br>7 days a week<br>365 days a year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Common Tree Emergencies</h2>
+                <p>Situations where you need immediate professional help</p>
+            </div>
+            <div class="emergency-grid">
+                <div class="emergency-card">
+                    <div class="emergency-icon">🌪️</div>
+                    <h3>Storm Damage</h3>
+                    <p>Wind, ice, and lightning can cause sudden, severe tree damage requiring immediate attention.</p>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-icon">🏠</div>
+                    <h3>Tree on House</h3>
+                    <p>Fallen trees on structures need careful removal to prevent additional damage.</p>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-icon">🚗</div>
+                    <h3>Blocked Driveway</h3>
+                    <p>When trees block your access, we clear the way so you can get in and out.</p>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-icon">⚡</div>
+                    <h3>Power Line Danger</h3>
+                    <p>Trees near power lines are extremely dangerous. We coordinate with utilities for safe removal.</p>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-icon">🌳</div>
+                    <h3>Leaning/Uprooted</h3>
+                    <p>Trees that could fall at any moment pose immediate risks to people and property.</p>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-icon">🔨</div>
+                    <h3>Hanging Limbs</h3>
+                    <p>Large broken branches suspended in the canopy can fall without warning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Emergency Response Process</h2>
+                <p>What happens when you call us</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h3>Call Us Anytime</h3>
+                    <p>Reach our emergency line 24/7. Describe the situation to our dispatcher.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <h3>Rapid Dispatch</h3>
+                    <p>We dispatch the nearest available crew with appropriate equipment.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <h3>Site Assessment</h3>
+                    <p>Crew evaluates the situation and develops a safe removal plan.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">4</div>
+                    <h3>Safe Removal</h3>
+                    <p>Professional removal with focus on protecting your property.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How quickly can you respond to emergencies?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We typically respond within 1-4 hours for true emergencies, depending on our current call volume and location. During major storm events when call volume is high, we prioritize based on danger level and work through calls as quickly as possible.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Is emergency tree service more expensive?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Emergency services typically cost more than scheduled work due to the immediate response required and often more hazardous conditions. However, we always provide upfront pricing before starting work so there are no surprises.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Will my insurance cover emergency tree removal?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        In many cases, yes. If a tree damages your home or other insured structure, tree removal is often covered. We can provide documentation and work with your insurance company to help with your claim.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What if a tree is on power lines?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Never approach trees that are touching or near power lines. Call us and your utility company immediately. We coordinate with utility crews to ensure power is safely disconnected before we work near any lines.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Other Services</h2>
+            </div>
+            <div class="related-grid">
+                <div class="related-card">
+                    <h3>🪓 Tree Removal</h3>
+                    <p>Scheduled tree removal</p>
+                    <a href="tree-removal.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>✂️ Tree Pruning</h3>
+                    <p>Professional trimming</p>
+                    <a href="tree-pruning.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>🪵 Stump Grinding</h3>
+                    <p>Complete stump removal</p>
+                    <a href="stump-grinding.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>🚜 Land Clearing</h3>
+                    <p>Lot and brush clearing</p>
+                    <a href="land-clearing.html">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>🚨 Tree Emergency? We're Here 24/7</h2>
+            <p>Don't wait. Call now for immediate assistance.</p>
+            <a href="tel:{{PHONE}}" class="cta-phone">{{PHONE}}</a>
+            <a href="tel:{{PHONE}}" class="btn btn-emergency" style="background:white;color:#dc3545;">Call For Emergency Service</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4 style="font-size:20px;margin-bottom:15px;">{{BUSINESS_NAME}}</h4>
+                    <p style="color:rgba(255,255,255,0.7);">Professional tree services in {{CITY}}, {{STATE}}. 24/7 emergency service available.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li>{{CITY}}</li>
+                        <li>{{AREA_1}}</li>
+                        <li>{{AREA_2}}</li>
+                        <li>{{AREA_3}}</li>
+                        <li>{{AREA_4}}</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:{{PHONE}}">{{PHONE}}</a></li>
+                        <li><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+                        <li>{{CITY}}, {{STATE}}</li>
+                        <li><strong>24/7 Emergency</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 {{BUSINESS_NAME}}. All rights reserved. | 24/7 Emergency Service Available</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('nav-menu').classList.toggle('active'); }
+        function toggleFaq(el) { el.parentElement.classList.toggle('active'); }
+    </script>
+</body>
+</html>

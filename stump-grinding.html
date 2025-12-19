@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stump Grinding & Removal in {{CITY}}, {{STATE}} | {{BUSINESS_NAME}}</title>
+    <meta name="description" content="Professional stump grinding in {{CITY}}, {{STATE}}. Complete stump removal below ground level. Reclaim your yard space. Licensed & insured. Call {{PHONE}} for free estimate!">
+    <meta name="keywords" content="stump grinding {{CITY}}, stump removal near me, tree stump grinding, stump grinder service, {{CITY}} {{STATE}} stump removal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="stump-grinding.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Stump Grinding",
+        "serviceType": "Stump Grinding Service",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "{{BUSINESS_NAME}}",
+            "telephone": "{{PHONE}}"
+        },
+        "areaServed": {"@type": "City", "name": "{{CITY}}"},
+        "description": "Professional stump grinding services to remove tree stumps below ground level."
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #2d5a27;
+            --primary-dark: #1e3d1a;
+            --secondary-color: #8b4513;
+            --accent-color: #f4a460;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f9f9f9;
+            --bg-white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text-dark); }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--bg-white); box-shadow: var(--shadow); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .header-top { background: var(--primary-dark); color: white; padding: 8px 0; font-size: 14px; }
+        .header-top .container { display: flex; justify-content: space-between; align-items: center; }
+        .header-top a { color: white; }
+        .header-top a:hover { color: var(--accent-color); }
+        .header-main { padding: 15px 0; }
+        .header-main .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 700; color: var(--primary-color); }
+        nav ul { display: flex; list-style: none; gap: 25px; }
+        nav a { font-weight: 500; color: var(--text-dark); }
+        nav a:hover { color: var(--primary-color); }
+        .nav-cta { background: var(--primary-color); color: white !important; padding: 10px 20px; border-radius: var(--border-radius); }
+        .nav-cta:hover { background: var(--primary-dark); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 24px; cursor: pointer; }
+        .hero { background: linear-gradient(135deg, rgba(45, 90, 39, 0.9), rgba(30, 61, 26, 0.95)); color: white; padding: 160px 0 80px; text-align: center; }
+        .hero h1 { font-size: 42px; margin-bottom: 20px; }
+        .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 30px; opacity: 0.95; }
+        .btn { display: inline-block; padding: 15px 35px; border-radius: var(--border-radius); font-weight: 600; cursor: pointer; transition: var(--transition); }
+        .btn-primary { background: var(--accent-color); color: var(--text-dark); }
+        .btn-primary:hover { background: #e8944a; transform: translateY(-2px); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        .btn-secondary:hover { background: white; color: var(--primary-color); }
+        .hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .breadcrumb { background: var(--bg-light); padding: 15px 0; font-size: 14px; }
+        .breadcrumb a { color: var(--primary-color); }
+        .section { padding: 70px 0; }
+        .section-light { background: var(--bg-light); }
+        .section-header { text-align: center; margin-bottom: 40px; }
+        .section-header h2 { font-size: 32px; color: var(--primary-color); margin-bottom: 15px; }
+        .section-header p { color: var(--text-light); max-width: 600px; margin: 0 auto; }
+        .service-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; }
+        .service-main h2 { font-size: 28px; color: var(--primary-color); margin-bottom: 20px; }
+        .service-main p { color: var(--text-light); margin-bottom: 20px; }
+        .service-main ul { margin: 20px 0; padding-left: 25px; }
+        .service-main li { margin-bottom: 10px; color: var(--text-light); }
+        .service-sidebar { background: var(--bg-light); padding: 30px; border-radius: var(--border-radius); height: fit-content; position: sticky; top: 120px; }
+        .sidebar-cta h3 { font-size: 22px; color: var(--primary-color); margin-bottom: 15px; }
+        .sidebar-cta p { margin-bottom: 20px; color: var(--text-light); }
+        .sidebar-phone { display: block; font-size: 24px; font-weight: 700; color: var(--primary-color); margin-bottom: 15px; }
+        .sidebar-phone:hover { color: var(--primary-dark); }
+        .reasons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+        .reason-card { background: var(--bg-white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center; }
+        .reason-icon { font-size: 45px; margin-bottom: 15px; }
+        .reason-card h3 { font-size: 18px; color: var(--primary-color); margin-bottom: 10px; }
+        .reason-card p { color: var(--text-light); font-size: 14px; }
+        .compare-table { width: 100%; border-collapse: collapse; margin-top: 30px; }
+        .compare-table th, .compare-table td { padding: 15px 20px; text-align: left; border-bottom: 1px solid #eee; }
+        .compare-table th { background: var(--primary-color); color: white; }
+        .compare-table tr:hover { background: var(--bg-light); }
+        .check { color: var(--primary-color); font-weight: bold; }
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: var(--bg-white); border-radius: var(--border-radius); margin-bottom: 15px; box-shadow: var(--shadow); overflow: hidden; }
+        .faq-question { padding: 20px 25px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question:hover { background: var(--bg-light); }
+        .faq-answer { padding: 0 25px 20px; color: var(--text-light); display: none; }
+        .faq-item.active .faq-answer { display: block; }
+        .faq-toggle { font-size: 24px; transition: var(--transition); }
+        .faq-item.active .faq-toggle { transform: rotate(45deg); }
+        .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .related-card { background: var(--bg-white); padding: 25px; border-radius: var(--border-radius); text-align: center; box-shadow: var(--shadow); transition: var(--transition); }
+        .related-card:hover { transform: translateY(-5px); }
+        .related-card h3 { font-size: 16px; color: var(--primary-color); margin-bottom: 10px; }
+        .related-card a { color: var(--primary-color); font-weight: 600; font-size: 14px; }
+        .cta-section { background: linear-gradient(135deg, var(--secondary-color), #6b3410); color: white; padding: 60px 0; text-align: center; }
+        .cta-section h2 { font-size: 32px; margin-bottom: 15px; }
+        .cta-section p { margin-bottom: 25px; }
+        .cta-phone { font-size: 28px; font-weight: 700; display: block; margin-bottom: 20px; }
+        .cta-phone:hover { color: var(--accent-color); }
+        footer { background: var(--text-dark); color: white; padding: 50px 0 25px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+        .footer-section h4 { font-size: 16px; margin-bottom: 15px; color: var(--accent-color); }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 8px; }
+        .footer-section a { color: rgba(255,255,255,0.7); }
+        .footer-section a:hover { color: white; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; color: rgba(255,255,255,0.6); font-size: 14px; }
+        @media (max-width: 992px) {
+            .service-content { grid-template-columns: 1fr; }
+            .service-sidebar { position: static; }
+            .reasons-grid { grid-template-columns: repeat(2, 1fr); }
+            .related-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            nav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-white); flex-direction: column; padding: 20px; box-shadow: var(--shadow); }
+            nav ul.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .hero h1 { font-size: 32px; }
+            .reasons-grid { grid-template-columns: 1fr; }
+            .header-top .container { flex-direction: column; gap: 5px; }
+            .compare-table { font-size: 14px; }
+            .compare-table th, .compare-table td { padding: 10px; }
+        }
+        @media (max-width: 480px) {
+            .related-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <span>Serving {{CITY}}, {{STATE}} & Surrounding Areas</span>
+                <a href="tel:{{PHONE}}">Call Now: {{PHONE}}</a>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">{{BUSINESS_NAME}}</a>
+                <nav>
+                    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency</a></li>
+                        <li><a href="tel:{{PHONE}}" class="nav-cta">Free Estimate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Stump Grinding Services in {{CITY}}, {{STATE}}</h1>
+            <p>Professional stump grinding to completely remove unsightly tree stumps. Reclaim your yard space, eliminate tripping hazards, and prepare for new landscaping.</p>
+            <div class="hero-btns">
+                <a href="tel:{{PHONE}}" class="btn btn-primary">Get Free Estimate</a>
+                <a href="#reasons" class="btn btn-secondary">Why Remove Stumps</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> <span> / Stump Grinding</span>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-main">
+                    <h2>Professional Stump Grinding Services</h2>
+                    <p>After a tree is removed, the remaining stump can be an eyesore and a nuisance. {{BUSINESS_NAME}} provides fast, efficient stump grinding services throughout {{CITY}}, {{STATE}} and the surrounding areas. Our powerful stump grinders can handle stumps of any size, grinding them down well below ground level so you can use your yard space however you like.</p>
+
+                    <h2>How Stump Grinding Works</h2>
+                    <p>Stump grinding uses a specialized machine with a rotating cutting wheel to chip away the wood. Here's what to expect:</p>
+                    <ul>
+                        <li><strong>Grinding Depth:</strong> We typically grind stumps 6-12 inches below ground level, though we can go deeper if needed for construction.</li>
+                        <li><strong>Wood Chips:</strong> The grinding process produces wood chips and mulch. You can keep these for your garden or we can haul them away.</li>
+                        <li><strong>Root System:</strong> Grinding removes the stump but leaves roots in place. They will decay naturally over time.</li>
+                        <li><strong>Quick Process:</strong> Most stumps can be ground in 30 minutes to 2 hours depending on size.</li>
+                    </ul>
+
+                    <h2>What Happens After Grinding?</h2>
+                    <p>After we finish grinding, you'll have a hole filled with wood chips and mulch. Options for this area include:</p>
+                    <ul>
+                        <li>Leave the mulch to decompose and settle naturally</li>
+                        <li>Add topsoil and plant grass seed</li>
+                        <li>Plant a new tree or shrub</li>
+                        <li>Install a garden bed or landscaping feature</li>
+                        <li>We can haul away the chips and fill with soil if preferred</li>
+                    </ul>
+                </div>
+
+                <div class="service-sidebar">
+                    <div class="sidebar-cta">
+                        <h3>Get Your Free Estimate</h3>
+                        <iframe
+                            src="https://api.leadconnectorhq.com/widget/form/eEjBKbIPWysdHKzXGN2D"
+                            style="width:100%;height:739px;border:none;border-radius:4px"
+                            id="inline-eEjBKbIPWysdHKzXGN2D"
+                            data-layout="{'id':'INLINE'}"
+                            data-trigger-type="alwaysShow"
+                            data-trigger-value=""
+                            data-activation-type="alwaysActivated"
+                            data-activation-value=""
+                            data-deactivation-type="neverDeactivate"
+                            data-deactivation-value=""
+                            data-form-name="Appointment Booking Form address"
+                            data-height="739"
+                            data-layout-iframe-id="inline-eEjBKbIPWysdHKzXGN2D"
+                            data-form-id="eEjBKbIPWysdHKzXGN2D"
+                            title="Appointment Booking Form address"
+                        ></iframe>
+                        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light" id="reasons">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Remove Tree Stumps?</h2>
+                <p>Good reasons to grind those stumps away</p>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">⚠️</div>
+                    <h3>Safety Hazard</h3>
+                    <p>Stumps are tripping hazards, especially for children playing in the yard.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🏡</div>
+                    <h3>Curb Appeal</h3>
+                    <p>Stumps are eyesores that detract from your property's appearance and value.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🌱</div>
+                    <h3>Prevent Regrowth</h3>
+                    <p>Some stumps sprout new shoots that require ongoing maintenance to control.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🐛</div>
+                    <h3>Pest Prevention</h3>
+                    <p>Decaying stumps attract termites, carpenter ants, and other wood-boring pests.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🚜</div>
+                    <h3>Mowing Ease</h3>
+                    <p>No more maneuvering around stumps or risking mower blade damage.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">📐</div>
+                    <h3>Reclaim Space</h3>
+                    <p>Use that space for a garden, patio, new tree, or just more lawn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Stump Grinding vs. Stump Removal</h2>
+                <p>Understanding your options</p>
+            </div>
+            <table class="compare-table">
+                <tr>
+                    <th>Factor</th>
+                    <th>Stump Grinding</th>
+                    <th>Full Stump Removal</th>
+                </tr>
+                <tr>
+                    <td>Process</td>
+                    <td>Grind stump 6-12" below ground</td>
+                    <td>Dig out entire stump and roots</td>
+                </tr>
+                <tr>
+                    <td>Speed</td>
+                    <td class="check">Fast (30 min - 2 hours)</td>
+                    <td>Slower (several hours)</td>
+                </tr>
+                <tr>
+                    <td>Cost</td>
+                    <td class="check">More affordable</td>
+                    <td>More expensive</td>
+                </tr>
+                <tr>
+                    <td>Yard Impact</td>
+                    <td class="check">Minimal disruption</td>
+                    <td>Large hole left behind</td>
+                </tr>
+                <tr>
+                    <td>Root System</td>
+                    <td>Roots left to decay naturally</td>
+                    <td>Roots removed completely</td>
+                </tr>
+                <tr>
+                    <td>Best For</td>
+                    <td>Most residential situations</td>
+                    <td>Construction requiring full root removal</td>
+                </tr>
+            </table>
+            <p style="margin-top: 20px; color: var(--text-light); text-align: center;">For most homeowners, stump grinding is the preferred choice due to lower cost and minimal yard disruption.</p>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How much does stump grinding cost?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Stump grinding is typically priced by stump diameter. Expect $75-$150 for small stumps (under 12"), $150-$300 for medium stumps (12-24"), and $300-$500+ for large stumps (24"+). We offer discounts for multiple stumps. Contact us for a free, accurate estimate.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How deep do you grind?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Standard grinding is 6-12 inches below ground level, which is sufficient for planting grass or most landscaping. If you're planning construction or need deeper grinding, just let us know and we can accommodate.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What about the roots?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Stump grinding removes the stump but leaves the root system in place. Roots will naturally decay over time (typically 5-10 years). They won't regrow without the stump. If full root removal is needed, we can discuss complete stump removal options.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Can I plant a new tree where the stump was?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! After grinding, we recommend removing as much of the wood chips as possible, adding fresh topsoil, and waiting a few months before planting. This allows the remaining wood chips to begin decomposing.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Related Services</h2>
+            </div>
+            <div class="related-grid">
+                <div class="related-card">
+                    <h3>🪓 Tree Removal</h3>
+                    <p>Complete tree removal service</p>
+                    <a href="tree-removal.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>✂️ Tree Pruning</h3>
+                    <p>Professional trimming</p>
+                    <a href="tree-pruning.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>🚜 Land Clearing</h3>
+                    <p>Clear lots and brush</p>
+                    <a href="land-clearing.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>🚨 Emergency Service</h3>
+                    <p>24/7 storm response</p>
+                    <a href="emergency-tree-service.html">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Remove Those Stumps?</h2>
+            <p>Contact us today for a free estimate.</p>
+            <a href="tel:{{PHONE}}" class="cta-phone">{{PHONE}}</a>
+            <a href="index.html#contact" class="btn btn-primary">Request Free Estimate</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4 style="font-size:20px;margin-bottom:15px;">{{BUSINESS_NAME}}</h4>
+                    <p style="color:rgba(255,255,255,0.7);">Professional tree services in {{CITY}}, {{STATE}}.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li>{{CITY}}</li>
+                        <li>{{AREA_1}}</li>
+                        <li>{{AREA_2}}</li>
+                        <li>{{AREA_3}}</li>
+                        <li>{{AREA_4}}</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:{{PHONE}}">{{PHONE}}</a></li>
+                        <li><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+                        <li>{{CITY}}, {{STATE}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 {{BUSINESS_NAME}}. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('nav-menu').classList.toggle('active'); }
+        function toggleFaq(el) { el.parentElement.classList.toggle('active'); }
+    </script>
+</body>
+</html>

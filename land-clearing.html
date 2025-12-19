@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Clearing Services in {{CITY}}, {{STATE}} | {{BUSINESS_NAME}}</title>
+    <meta name="description" content="Professional land clearing in {{CITY}}, {{STATE}}. Brush removal, lot clearing, site preparation for construction. Licensed & insured. Call {{PHONE}} for free estimate!">
+    <meta name="keywords" content="land clearing {{CITY}}, lot clearing near me, brush removal, site preparation, forestry mulching, {{CITY}} {{STATE}} land clearing">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="land-clearing.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Land Clearing",
+        "serviceType": "Land Clearing Service",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "{{BUSINESS_NAME}}",
+            "telephone": "{{PHONE}}"
+        },
+        "areaServed": {"@type": "City", "name": "{{CITY}}"},
+        "description": "Professional land clearing services including brush removal, lot clearing, and site preparation for construction and landscaping."
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #2d5a27;
+            --primary-dark: #1e3d1a;
+            --secondary-color: #8b4513;
+            --accent-color: #f4a460;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f9f9f9;
+            --bg-white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text-dark); }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--bg-white); box-shadow: var(--shadow); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .header-top { background: var(--primary-dark); color: white; padding: 8px 0; font-size: 14px; }
+        .header-top .container { display: flex; justify-content: space-between; align-items: center; }
+        .header-top a { color: white; }
+        .header-top a:hover { color: var(--accent-color); }
+        .header-main { padding: 15px 0; }
+        .header-main .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 700; color: var(--primary-color); }
+        nav ul { display: flex; list-style: none; gap: 25px; }
+        nav a { font-weight: 500; color: var(--text-dark); }
+        nav a:hover { color: var(--primary-color); }
+        .nav-cta { background: var(--primary-color); color: white !important; padding: 10px 20px; border-radius: var(--border-radius); }
+        .nav-cta:hover { background: var(--primary-dark); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 24px; cursor: pointer; }
+        .hero { background: linear-gradient(135deg, rgba(45, 90, 39, 0.9), rgba(30, 61, 26, 0.95)); color: white; padding: 160px 0 80px; text-align: center; }
+        .hero h1 { font-size: 42px; margin-bottom: 20px; }
+        .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 30px; opacity: 0.95; }
+        .btn { display: inline-block; padding: 15px 35px; border-radius: var(--border-radius); font-weight: 600; cursor: pointer; transition: var(--transition); }
+        .btn-primary { background: var(--accent-color); color: var(--text-dark); }
+        .btn-primary:hover { background: #e8944a; transform: translateY(-2px); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        .btn-secondary:hover { background: white; color: var(--primary-color); }
+        .hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .breadcrumb { background: var(--bg-light); padding: 15px 0; font-size: 14px; }
+        .breadcrumb a { color: var(--primary-color); }
+        .section { padding: 70px 0; }
+        .section-light { background: var(--bg-light); }
+        .section-header { text-align: center; margin-bottom: 40px; }
+        .section-header h2 { font-size: 32px; color: var(--primary-color); margin-bottom: 15px; }
+        .section-header p { color: var(--text-light); max-width: 600px; margin: 0 auto; }
+        .service-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; }
+        .service-main h2 { font-size: 28px; color: var(--primary-color); margin-bottom: 20px; }
+        .service-main p { color: var(--text-light); margin-bottom: 20px; }
+        .service-main ul { margin: 20px 0; padding-left: 25px; }
+        .service-main li { margin-bottom: 10px; color: var(--text-light); }
+        .service-sidebar { background: var(--bg-light); padding: 30px; border-radius: var(--border-radius); height: fit-content; position: sticky; top: 120px; }
+        .sidebar-cta h3 { font-size: 22px; color: var(--primary-color); margin-bottom: 15px; }
+        .sidebar-cta p { margin-bottom: 20px; color: var(--text-light); }
+        .sidebar-phone { display: block; font-size: 24px; font-weight: 700; color: var(--primary-color); margin-bottom: 15px; }
+        .sidebar-phone:hover { color: var(--primary-dark); }
+        .uses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+        .use-card { background: var(--bg-white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center; transition: var(--transition); }
+        .use-card:hover { transform: translateY(-5px); }
+        .use-icon { font-size: 45px; margin-bottom: 15px; }
+        .use-card h3 { font-size: 18px; color: var(--primary-color); margin-bottom: 10px; }
+        .use-card p { color: var(--text-light); font-size: 14px; }
+        .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .step { text-align: center; padding: 25px; background: var(--bg-white); border-radius: var(--border-radius); box-shadow: var(--shadow); }
+        .step-num { width: 45px; height: 45px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; margin: 0 auto 15px; }
+        .step h3 { font-size: 16px; color: var(--primary-color); margin-bottom: 8px; }
+        .step p { font-size: 13px; color: var(--text-light); }
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: var(--bg-white); border-radius: var(--border-radius); margin-bottom: 15px; box-shadow: var(--shadow); overflow: hidden; }
+        .faq-question { padding: 20px 25px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question:hover { background: var(--bg-light); }
+        .faq-answer { padding: 0 25px 20px; color: var(--text-light); display: none; }
+        .faq-item.active .faq-answer { display: block; }
+        .faq-toggle { font-size: 24px; transition: var(--transition); }
+        .faq-item.active .faq-toggle { transform: rotate(45deg); }
+        .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .related-card { background: var(--bg-white); padding: 25px; border-radius: var(--border-radius); text-align: center; box-shadow: var(--shadow); transition: var(--transition); }
+        .related-card:hover { transform: translateY(-5px); }
+        .related-card h3 { font-size: 16px; color: var(--primary-color); margin-bottom: 10px; }
+        .related-card a { color: var(--primary-color); font-weight: 600; font-size: 14px; }
+        .cta-section { background: linear-gradient(135deg, var(--secondary-color), #6b3410); color: white; padding: 60px 0; text-align: center; }
+        .cta-section h2 { font-size: 32px; margin-bottom: 15px; }
+        .cta-section p { margin-bottom: 25px; }
+        .cta-phone { font-size: 28px; font-weight: 700; display: block; margin-bottom: 20px; }
+        .cta-phone:hover { color: var(--accent-color); }
+        footer { background: var(--text-dark); color: white; padding: 50px 0 25px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px; }
+        .footer-section h4 { font-size: 16px; margin-bottom: 15px; color: var(--accent-color); }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 8px; }
+        .footer-section a { color: rgba(255,255,255,0.7); }
+        .footer-section a:hover { color: white; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; color: rgba(255,255,255,0.6); font-size: 14px; }
+        @media (max-width: 992px) {
+            .service-content { grid-template-columns: 1fr; }
+            .service-sidebar { position: static; }
+            .uses-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-steps { grid-template-columns: repeat(2, 1fr); }
+            .related-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            nav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-white); flex-direction: column; padding: 20px; box-shadow: var(--shadow); }
+            nav ul.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .hero h1 { font-size: 32px; }
+            .uses-grid, .process-steps { grid-template-columns: 1fr; }
+            .header-top .container { flex-direction: column; gap: 5px; }
+        }
+        @media (max-width: 480px) {
+            .related-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <span>Serving {{CITY}}, {{STATE}} & Surrounding Areas</span>
+                <a href="tel:{{PHONE}}">Call Now: {{PHONE}}</a>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">{{BUSINESS_NAME}}</a>
+                <nav>
+                    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency</a></li>
+                        <li><a href="tel:{{PHONE}}" class="nav-cta">Free Estimate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Land Clearing Services in {{CITY}}, {{STATE}}</h1>
+            <p>Professional land clearing for construction, landscaping, and property improvement. We clear brush, remove trees, and prepare your site efficiently and affordably.</p>
+            <div class="hero-btns">
+                <a href="tel:{{PHONE}}" class="btn btn-primary">Get Free Estimate</a>
+                <a href="#uses" class="btn btn-secondary">See Applications</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> <span> / Land Clearing</span>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-main">
+                    <h2>Professional Land Clearing Services</h2>
+                    <p>Whether you're preparing a building site, clearing an overgrown lot, or creating more usable space on your property, {{BUSINESS_NAME}} provides efficient and thorough land clearing services throughout {{CITY}}, {{STATE}} and the surrounding areas.</p>
+                    <p>We have the equipment, expertise, and crews to handle projects of all sizes—from small residential lots to large commercial properties. Our goal is to clear your land quickly and cost-effectively while minimizing environmental impact.</p>
+
+                    <h2>What We Clear</h2>
+                    <ul>
+                        <li><strong>Trees & Stumps:</strong> Complete removal of trees and stumps of all sizes.</li>
+                        <li><strong>Brush & Undergrowth:</strong> Clearing of dense vegetation, bushes, and small growth.</li>
+                        <li><strong>Overgrown Lots:</strong> Restoring neglected properties to usable condition.</li>
+                        <li><strong>Fence Lines:</strong> Clearing along property boundaries and fence rows.</li>
+                        <li><strong>Invasive Species:</strong> Removal of problem plants and aggressive vegetation.</li>
+                        <li><strong>Debris:</strong> Fallen trees, branches, and organic debris cleanup.</li>
+                    </ul>
+
+                    <h2>Our Land Clearing Methods</h2>
+                    <p>We use various techniques depending on your project needs and site conditions:</p>
+                    <ul>
+                        <li><strong>Forestry Mulching:</strong> Grinding vegetation into mulch that enriches the soil—no burning or hauling required.</li>
+                        <li><strong>Traditional Clearing:</strong> Tree removal, cutting, and debris hauling for complete site clearing.</li>
+                        <li><strong>Selective Clearing:</strong> Removing specific trees and vegetation while preserving desirable plants.</li>
+                        <li><strong>Grubbing:</strong> Root removal for sites requiring complete vegetation elimination.</li>
+                    </ul>
+                </div>
+
+                <div class="service-sidebar">
+                    <div class="sidebar-cta">
+                        <h3>Get Your Free Estimate</h3>
+                        <iframe
+                            src="https://api.leadconnectorhq.com/widget/form/eEjBKbIPWysdHKzXGN2D"
+                            style="width:100%;height:739px;border:none;border-radius:4px"
+                            id="inline-eEjBKbIPWysdHKzXGN2D"
+                            data-layout="{'id':'INLINE'}"
+                            data-trigger-type="alwaysShow"
+                            data-trigger-value=""
+                            data-activation-type="alwaysActivated"
+                            data-activation-value=""
+                            data-deactivation-type="neverDeactivate"
+                            data-deactivation-value=""
+                            data-form-name="Appointment Booking Form address"
+                            data-height="739"
+                            data-layout-iframe-id="inline-eEjBKbIPWysdHKzXGN2D"
+                            data-form-id="eEjBKbIPWysdHKzXGN2D"
+                            title="Appointment Booking Form address"
+                        ></iframe>
+                        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light" id="uses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Land Clearing Applications</h2>
+                <p>Common reasons our customers need land clearing</p>
+            </div>
+            <div class="uses-grid">
+                <div class="use-card">
+                    <div class="use-icon">🏗️</div>
+                    <h3>Construction Prep</h3>
+                    <p>Clear sites for new homes, buildings, additions, or outbuildings.</p>
+                </div>
+                <div class="use-card">
+                    <div class="use-icon">🏡</div>
+                    <h3>New Home Sites</h3>
+                    <p>Prepare your lot for new construction with complete clearing.</p>
+                </div>
+                <div class="use-card">
+                    <div class="use-icon">🌿</div>
+                    <h3>Landscaping Projects</h3>
+                    <p>Clear areas for gardens, lawns, patios, and outdoor living spaces.</p>
+                </div>
+                <div class="use-card">
+                    <div class="use-icon">🚜</div>
+                    <h3>Agricultural Use</h3>
+                    <p>Convert wooded areas to pasture, cropland, or orchards.</p>
+                </div>
+                <div class="use-card">
+                    <div class="use-icon">🛣️</div>
+                    <h3>Road & Driveway</h3>
+                    <p>Clear paths for new driveways, access roads, and pathways.</p>
+                </div>
+                <div class="use-card">
+                    <div class="use-icon">🔥</div>
+                    <h3>Fire Prevention</h3>
+                    <p>Create defensible space and fire breaks around structures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Land Clearing Process</h2>
+                <p>How we approach your project</p>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Site Assessment</h3>
+                    <p>We evaluate your property to understand scope and requirements.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>Free Estimate</h3>
+                    <p>Detailed quote with clear pricing and timeline.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>Clear & Process</h3>
+                    <p>Efficient clearing using appropriate methods.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <h3>Site Ready</h3>
+                    <p>Your land prepared for its next use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about land clearing</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How much does land clearing cost?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Land clearing costs vary based on lot size, vegetation density, terrain, and debris disposal needs. Light clearing might cost $1,000-$2,000 per acre, while heavy clearing with large trees can run $3,000-$6,000+ per acre. We provide free on-site estimates for accurate pricing.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do I need permits for land clearing?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Permit requirements vary by location and project scope. Many areas require permits for clearing above a certain acreage or for removing specific tree species. We can help you understand local requirements and assist with the permit process if needed.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How long does land clearing take?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Timeline depends on project size and complexity. A typical residential lot can often be cleared in 1-3 days. Larger or more complex projects may take longer. We'll provide a time estimate during your consultation.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What happens to the debris?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We offer several options: forestry mulching converts vegetation to beneficial mulch left on-site, or we can haul away all debris for disposal. If desired, we can also leave cut wood for firewood. We'll discuss options during your estimate.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Related Services</h2>
+            </div>
+            <div class="related-grid">
+                <div class="related-card">
+                    <h3>🪓 Tree Removal</h3>
+                    <p>Individual tree removal</p>
+                    <a href="tree-removal.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>🪵 Stump Grinding</h3>
+                    <p>Complete stump elimination</p>
+                    <a href="stump-grinding.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>✂️ Tree Pruning</h3>
+                    <p>Professional trimming</p>
+                    <a href="tree-pruning.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>🚨 Emergency Service</h3>
+                    <p>24/7 storm response</p>
+                    <a href="emergency-tree-service.html">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Clear Your Land?</h2>
+            <p>Contact us today for a free on-site estimate.</p>
+            <a href="tel:{{PHONE}}" class="cta-phone">{{PHONE}}</a>
+            <a href="index.html#contact" class="btn btn-primary">Request Free Estimate</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4 style="font-size:20px;margin-bottom:15px;">{{BUSINESS_NAME}}</h4>
+                    <p style="color:rgba(255,255,255,0.7);">Professional tree services in {{CITY}}, {{STATE}}.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li>{{CITY}}</li>
+                        <li>{{AREA_1}}</li>
+                        <li>{{AREA_2}}</li>
+                        <li>{{AREA_3}}</li>
+                        <li>{{AREA_4}}</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:{{PHONE}}">{{PHONE}}</a></li>
+                        <li><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+                        <li>{{CITY}}, {{STATE}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 {{BUSINESS_NAME}}. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('nav-menu').classList.toggle('active'); }
+        function toggleFaq(el) { el.parentElement.classList.toggle('active'); }
+    </script>
+</body>
+</html>

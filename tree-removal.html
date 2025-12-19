@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Removal Services in {{CITY}}, {{STATE}} | {{BUSINESS_NAME}}</title>
+    <meta name="description" content="Professional tree removal in {{CITY}}, {{STATE}}. Safe removal of dead, damaged, or unwanted trees. Licensed & insured. Free estimates. Call {{PHONE}} today!">
+    <meta name="keywords" content="tree removal {{CITY}}, tree removal near me, tree cutting service, dead tree removal, hazardous tree removal, {{CITY}} {{STATE}} tree service">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="US-{{STATE}}">
+    <meta name="geo.placename" content="{{CITY}}">
+    <link rel="canonical" href="tree-removal.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tree Removal Services | {{BUSINESS_NAME}} - {{CITY}}, {{STATE}}">
+    <meta property="og:description" content="Safe & professional tree removal services. Licensed, insured, free estimates.">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org Service Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Tree Removal",
+        "serviceType": "Tree Removal Service",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "{{BUSINESS_NAME}}",
+            "telephone": "{{PHONE}}",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "{{CITY}}",
+                "addressRegion": "{{STATE}}",
+                "addressCountry": "US"
+            }
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "{{CITY}}"
+        },
+        "description": "Professional tree removal services including dead tree removal, hazardous tree removal, and complete tree cutting with stump options."
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much does tree removal cost in {{CITY}}?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tree removal costs vary based on size, location, and complexity. Small trees typically cost $200-$500, medium trees $500-$1,000, and large trees $1,000-$2,000+. Contact us for a free, accurate estimate for your specific tree."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need a permit to remove a tree in {{CITY}}?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Permit requirements vary by municipality. Some areas require permits for trees over a certain diameter. We can help you determine if a permit is needed and assist with the process."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does tree removal take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most residential tree removals take 2-5 hours depending on size and complexity. Large or hazardous trees may require a full day. We'll provide a time estimate during your consultation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What happens to the wood after tree removal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We can haul away all debris, chip branches for mulch, or cut the trunk into firewood lengths if you'd like to keep it. Just let us know your preference."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #2d5a27;
+            --primary-dark: #1e3d1a;
+            --secondary-color: #8b4513;
+            --accent-color: #f4a460;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f9f9f9;
+            --bg-white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header {
+            background: var(--bg-white);
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .header-top {
+            background: var(--primary-dark);
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        .header-top .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-top a { color: white; }
+        .header-top a:hover { color: var(--accent-color); }
+        .header-main { padding: 15px 0; }
+        .header-main .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 24px; font-weight: 700; color: var(--primary-color); }
+        nav ul { display: flex; list-style: none; gap: 25px; }
+        nav a { font-weight: 500; color: var(--text-dark); }
+        nav a:hover { color: var(--primary-color); }
+        .nav-cta {
+            background: var(--primary-color);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+        }
+        .nav-cta:hover { background: var(--primary-dark); }
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.9), rgba(30, 61, 26, 0.95));
+            color: white;
+            padding: 160px 0 80px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 42px; margin-bottom: 20px; }
+        .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 30px; opacity: 0.95; }
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .btn-primary { background: var(--accent-color); color: var(--text-dark); }
+        .btn-primary:hover { background: #e8944a; transform: translateY(-2px); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        .btn-secondary:hover { background: white; color: var(--primary-color); }
+        .hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: var(--bg-light);
+            padding: 15px 0;
+            font-size: 14px;
+        }
+        .breadcrumb a { color: var(--primary-color); }
+        .breadcrumb span { color: var(--text-light); }
+
+        /* Content Sections */
+        .section { padding: 70px 0; }
+        .section-light { background: var(--bg-light); }
+        .section-header { text-align: center; margin-bottom: 40px; }
+        .section-header h2 { font-size: 32px; color: var(--primary-color); margin-bottom: 15px; }
+        .section-header p { color: var(--text-light); max-width: 600px; margin: 0 auto; }
+
+        /* Service Details */
+        .service-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; }
+        .service-main h2 { font-size: 28px; color: var(--primary-color); margin-bottom: 20px; }
+        .service-main p { color: var(--text-light); margin-bottom: 20px; }
+        .service-main ul { margin: 20px 0; padding-left: 25px; }
+        .service-main li { margin-bottom: 10px; color: var(--text-light); }
+        .service-sidebar {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+        .sidebar-cta h3 { font-size: 22px; color: var(--primary-color); margin-bottom: 15px; }
+        .sidebar-cta p { margin-bottom: 20px; color: var(--text-light); }
+        .sidebar-phone {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .sidebar-phone:hover { color: var(--primary-dark); }
+
+        /* Process */
+        .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+        .process-step {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 15px;
+        }
+        .process-step h3 { font-size: 18px; color: var(--primary-color); margin-bottom: 10px; }
+        .process-step p { font-size: 14px; color: var(--text-light); }
+
+        /* Benefits */
+        .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .benefit-card {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        .benefit-icon { font-size: 40px; margin-bottom: 15px; }
+        .benefit-card h3 { font-size: 18px; color: var(--primary-color); margin-bottom: 10px; }
+        .benefit-card p { color: var(--text-light); font-size: 14px; }
+
+        /* FAQ */
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 20px 25px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question:hover { background: var(--bg-light); }
+        .faq-answer { padding: 0 25px 20px; color: var(--text-light); display: none; }
+        .faq-item.active .faq-answer { display: block; }
+        .faq-item.active .faq-toggle { transform: rotate(45deg); }
+        .faq-toggle { font-size: 24px; transition: var(--transition); }
+
+        /* Related Services */
+        .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .related-card {
+            background: var(--bg-white);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .related-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+        .related-card h3 { font-size: 16px; color: var(--primary-color); margin-bottom: 10px; }
+        .related-card a { color: var(--primary-color); font-weight: 600; font-size: 14px; }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--secondary-color), #6b3410);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .cta-section h2 { font-size: 32px; margin-bottom: 15px; }
+        .cta-section p { margin-bottom: 25px; opacity: 0.95; }
+        .cta-phone { font-size: 28px; font-weight: 700; display: block; margin-bottom: 20px; }
+        .cta-phone:hover { color: var(--accent-color); }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 50px 0 25px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .footer-section h4 { font-size: 16px; margin-bottom: 15px; color: var(--accent-color); }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 8px; }
+        .footer-section a { color: rgba(255,255,255,0.7); }
+        .footer-section a:hover { color: white; }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 25px;
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .service-content { grid-template-columns: 1fr; }
+            .service-sidebar { position: static; }
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+            .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+            .related-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--bg-white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: var(--shadow);
+            }
+            nav ul.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .hero h1 { font-size: 32px; }
+            .process-grid, .benefits-grid { grid-template-columns: 1fr; }
+            .header-top .container { flex-direction: column; gap: 5px; }
+        }
+        @media (max-width: 480px) {
+            .related-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <span>Serving {{CITY}}, {{STATE}} & Surrounding Areas</span>
+                <a href="tel:{{PHONE}}">Call Now: {{PHONE}}</a>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">{{BUSINESS_NAME}}</a>
+                <nav>
+                    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency</a></li>
+                        <li><a href="tel:{{PHONE}}" class="nav-cta">Free Estimate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Tree Removal in {{CITY}}, {{STATE}}</h1>
+            <p>Safe, efficient tree removal by licensed and insured professionals. From small ornamental trees to large hazardous removals, we handle it all with precision and care.</p>
+            <div class="hero-btns">
+                <a href="tel:{{PHONE}}" class="btn btn-primary">Get Free Estimate</a>
+                <a href="#process" class="btn btn-secondary">How It Works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> <span> / Tree Removal</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-main">
+                    <h2>Expert Tree Removal Services</h2>
+                    <p>At {{BUSINESS_NAME}}, we specialize in safe and efficient tree removal for residential and commercial properties throughout {{CITY}}, {{STATE}} and the surrounding areas. Whether you have a dead tree that's become a safety hazard, a storm-damaged tree threatening your home, or simply need to clear space for a new project, our experienced team has the skills and equipment to get the job done right.</p>
+
+                    <h2>When Do You Need Tree Removal?</h2>
+                    <p>Not every tree problem requires removal, but there are situations when it's the best—or only—option:</p>
+                    <ul>
+                        <li><strong>Dead or Dying Trees:</strong> Trees that are dead, diseased beyond treatment, or in severe decline pose falling risks and should be removed promptly.</li>
+                        <li><strong>Storm Damage:</strong> Trees with major structural damage from storms, including split trunks or large broken limbs, may be unsafe to save.</li>
+                        <li><strong>Hazardous Location:</strong> Trees growing too close to power lines, buildings, or other structures may need removal to prevent damage.</li>
+                        <li><strong>Root Problems:</strong> Trees with roots damaging foundations, driveways, or underground utilities.</li>
+                        <li><strong>Construction or Landscaping:</strong> Trees that need to be cleared for building projects or landscape redesigns.</li>
+                        <li><strong>Overcrowding:</strong> Removing select trees to improve the health and appearance of remaining trees.</li>
+                    </ul>
+
+                    <h2>Our Tree Removal Process</h2>
+                    <p>We follow a systematic approach to ensure every tree removal is completed safely and efficiently:</p>
+                    <ul>
+                        <li><strong>Assessment:</strong> We evaluate the tree's size, condition, location, and any potential hazards.</li>
+                        <li><strong>Planning:</strong> We develop a removal strategy that minimizes risk to people and property.</li>
+                        <li><strong>Safe Removal:</strong> Using professional equipment and techniques, we carefully remove the tree in sections if necessary.</li>
+                        <li><strong>Cleanup:</strong> We remove all debris and leave your property clean and tidy.</li>
+                        <li><strong>Stump Options:</strong> We offer stump grinding as an additional service to complete the job.</li>
+                    </ul>
+
+                    <h2>Types of Trees We Remove</h2>
+                    <p>Our team is equipped to handle tree removal of all types and sizes, including:</p>
+                    <ul>
+                        <li>Oak, Maple, and other hardwood trees</li>
+                        <li>Pine, Spruce, and other conifers</li>
+                        <li>Palm trees</li>
+                        <li>Fruit and ornamental trees</li>
+                        <li>Large, mature trees (100+ feet)</li>
+                        <li>Hazardous and leaning trees</li>
+                        <li>Trees in tight spaces or near structures</li>
+                    </ul>
+                </div>
+
+                <div class="service-sidebar">
+                    <div class="sidebar-cta">
+                        <h3>Get Your Free Estimate</h3>
+                        <iframe
+                            src="https://api.leadconnectorhq.com/widget/form/eEjBKbIPWysdHKzXGN2D"
+                            style="width:100%;height:739px;border:none;border-radius:4px"
+                            id="inline-eEjBKbIPWysdHKzXGN2D"
+                            data-layout="{'id':'INLINE'}"
+                            data-trigger-type="alwaysShow"
+                            data-trigger-value=""
+                            data-activation-type="alwaysActivated"
+                            data-activation-value=""
+                            data-deactivation-type="neverDeactivate"
+                            data-deactivation-value=""
+                            data-form-name="Appointment Booking Form address"
+                            data-height="739"
+                            data-layout-iframe-id="inline-eEjBKbIPWysdHKzXGN2D"
+                            data-form-id="eEjBKbIPWysdHKzXGN2D"
+                            title="Appointment Booking Form address"
+                        ></iframe>
+                        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section-light" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Tree Removal Process</h2>
+                <p>A systematic approach to safe, efficient tree removal</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Free Consultation</h3>
+                    <p>We assess your tree and provide a detailed quote with no obligation.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Schedule Service</h3>
+                    <p>Pick a date that works for you. We offer flexible scheduling.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Safe Removal</h3>
+                    <p>Our crew safely removes the tree using proper techniques and equipment.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Complete Cleanup</h3>
+                    <p>We remove all debris and leave your property spotless.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose {{BUSINESS_NAME}} for Tree Removal?</h2>
+                <p>Experience the difference of working with true professionals</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Fully Insured</h3>
+                    <p>Complete liability and workers' comp coverage protects you and your property.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Precision Work</h3>
+                    <p>Expert techniques ensure safe removal even in tight spaces near structures.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Fair Pricing</h3>
+                    <p>Competitive rates with no hidden fees. Free estimates on all projects.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧹</div>
+                    <h3>Total Cleanup</h3>
+                    <p>We haul away all debris. You'd never know we were there.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Fast Service</h3>
+                    <p>Quick scheduling and efficient work. Most jobs completed in one day.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌳</div>
+                    <h3>Experienced Crew</h3>
+                    <p>Trained professionals who know how to handle any tree situation safely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our tree removal services</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How much does tree removal cost in {{CITY}}?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Tree removal costs vary based on size, location, and complexity. Small trees typically cost $200-$500, medium trees $500-$1,000, and large trees $1,000-$2,000+. Factors like proximity to structures, power lines, and accessibility affect pricing. Contact us for a free, accurate estimate for your specific tree.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do I need a permit to remove a tree?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Permit requirements vary by municipality in {{STATE}}. Some areas require permits for trees over a certain diameter or for specific species. We can help you determine if a permit is needed and assist with the application process.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How long does tree removal take?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Most residential tree removals take 2-5 hours depending on size and complexity. Large or hazardous trees may require a full day. Very large or complex removals might span multiple days. We'll provide a time estimate during your free consultation.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What happens to the wood after removal?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We offer several options: We can haul away all debris, chip branches into mulch for your garden, or cut the trunk into firewood lengths if you'd like to keep it. Just let us know your preference when scheduling.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do you remove the stump too?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Stump grinding is available as an additional service. Many customers choose to have the stump ground to below ground level so they can plant grass or a new tree in its place. We'll include stump grinding pricing in your estimate if you're interested.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Related Services</h2>
+                <p>Other tree care services you might need</p>
+            </div>
+            <div class="related-grid">
+                <div class="related-card">
+                    <h3>🪵 Stump Grinding</h3>
+                    <p>Complete stump removal after tree cutting</p>
+                    <a href="stump-grinding.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>✂️ Tree Pruning</h3>
+                    <p>Professional trimming and shaping</p>
+                    <a href="tree-pruning.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>🚜 Land Clearing</h3>
+                    <p>Clear multiple trees and brush</p>
+                    <a href="land-clearing.html">Learn More →</a>
+                </div>
+                <div class="related-card">
+                    <h3>🚨 Emergency Service</h3>
+                    <p>24/7 storm damage response</p>
+                    <a href="emergency-tree-service.html">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Remove That Tree?</h2>
+            <p>Contact us today for a free, no-obligation estimate.</p>
+            <a href="tel:{{PHONE}}" class="cta-phone">{{PHONE}}</a>
+            <a href="index.html#contact" class="btn btn-primary">Request Free Estimate</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4 style="font-size:20px;margin-bottom:15px;">{{BUSINESS_NAME}}</h4>
+                    <p style="color:rgba(255,255,255,0.7);margin-bottom:15px;">Professional tree services for {{CITY}}, {{STATE}} and surrounding areas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li>{{CITY}}</li>
+                        <li>{{AREA_1}}</li>
+                        <li>{{AREA_2}}</li>
+                        <li>{{AREA_3}}</li>
+                        <li>{{AREA_4}}</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:{{PHONE}}">{{PHONE}}</a></li>
+                        <li><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+                        <li>{{CITY}}, {{STATE}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 {{BUSINESS_NAME}}. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+        function toggleFaq(element) {
+            element.parentElement.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
