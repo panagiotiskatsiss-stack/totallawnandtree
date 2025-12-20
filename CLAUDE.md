@@ -109,8 +109,15 @@ The header includes:
 
 Open any HTML file directly in a browser - no server required.
 
+## Architecture Notes
+
+- **No build system** - Open HTML files directly in browser to preview
+- **Self-contained files** - Each HTML has its own embedded `<style>` and `<script>` blocks
+- **Responsive breakpoints** - 1024px (medium screens), 768px (mobile menu), 480px (small mobile)
+- **Navigation dropdown** - CSS hover on desktop, JavaScript toggle on mobile (see `toggleMenu()` and mobile dropdown handlers at end of each file)
+
 ## Important Notes
 
-- When editing, apply changes to ALL 12 HTML files (6 main + 6 templates)
-- Test responsive behavior at 1024px and 768px breakpoints
+- When editing shared components (header, footer, nav), apply changes to ALL 12 HTML files (6 main + 6 templates)
+- The 6 main pages and 6 templates have slightly different CSS formatting (main pages use multi-line, templates use compact single-line)
 - Validate Schema markup with Google Rich Results Test after edits
