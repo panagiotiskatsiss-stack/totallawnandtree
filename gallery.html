@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work Gallery | Total Tree Service - Washington, NJ</title>
+    <meta name="description" content="View our gallery of completed tree service projects in Washington, NJ. Professional tree removal, pruning, stump grinding, and land clearing work by Total Tree Service.">
+    <meta name="keywords" content="tree service gallery, tree removal photos, tree work examples, Washington NJ tree service">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="US-NJ">
+    <meta name="geo.placename" content="Washington">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Our Work Gallery | Total Tree Service">
+    <meta property="og:description" content="See examples of our professional tree service work in Washington, NJ and surrounding areas.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <style>
+        :root {
+            --primary-color: #2d5a27;
+            --primary-dark: #1e3d1a;
+            --secondary-color: #8b4513;
+            --accent-color: #f4a460;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f9f9f9;
+            --bg-white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text-dark); background: var(--bg-white); }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        img { max-width: 100%; height: auto; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header { background: var(--bg-white); box-shadow: var(--shadow); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .header-top { background: var(--primary-dark); color: white; padding: 8px 0; font-size: 14px; }
+        .header-top .container { display: flex; justify-content: space-between; align-items: center; }
+        .header-top a { color: white; }
+        .header-top a:hover { color: var(--accent-color); }
+        .header-main { padding: 15px 0; }
+        .header-main .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; flex-shrink: 0; }
+        .logo img { height: 50px; width: auto; }
+
+        nav { display: flex; align-items: center; }
+        nav ul { display: flex; list-style: none; gap: 8px; align-items: center; margin: 0; padding: 0; }
+        nav > ul > li > a { font-weight: 500; color: var(--text-dark); padding: 10px 12px; display: block; white-space: nowrap; font-size: 14px; }
+        nav > ul > li > a:hover { color: var(--primary-color); }
+        .nav-cta { background: var(--primary-color); color: white !important; padding: 10px 20px !important; border-radius: var(--border-radius); font-size: 14px !important; }
+        .nav-cta:hover { background: var(--primary-dark); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--primary-color); padding: 5px; }
+
+        /* Dropdown */
+        .nav-dropdown { position: relative; }
+        .nav-dropdown > a { display: flex; align-items: center; gap: 5px; }
+        .dropdown-arrow { font-size: 8px; transition: var(--transition); }
+        .nav-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
+        .dropdown-menu { position: absolute; top: calc(100% + 5px); left: 50%; transform: translateX(-50%); background: var(--bg-white); min-width: 180px; box-shadow: var(--shadow-lg); border-radius: var(--border-radius); padding: 8px 0; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 1000; }
+        .nav-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; }
+        .dropdown-menu li { list-style: none; }
+        .dropdown-menu a { display: block; padding: 10px 16px; color: var(--text-dark); font-weight: 500; white-space: nowrap; font-size: 14px; }
+        .dropdown-menu a:hover { background: var(--bg-light); color: var(--primary-color); }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.85), rgba(30, 61, 26, 0.9)),
+                        url('total lawn and tree website/6c27b5e3-a908-4373-955f-3463e71ed6c5.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 180px 0 80px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 20px; opacity: 0.95; max-width: 700px; margin: 0 auto; }
+
+        /* Gallery Section */
+        .gallery-section { padding: 80px 0; background: var(--bg-light); }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header h2 { font-size: 36px; color: var(--primary-color); margin-bottom: 15px; }
+        .section-header p { font-size: 18px; color: var(--text-light); max-width: 600px; margin: 0 auto; }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            color: white;
+            transform: translateY(100%);
+            transition: var(--transition);
+            z-index: 1;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay span {
+            font-size: 14px;
+            background: var(--primary-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: var(--border-radius);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            z-index: 10001;
+            background: rgba(0,0,0,0.5);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .lightbox-close:hover {
+            background: var(--primary-color);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 50px;
+            cursor: pointer;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .lightbox-nav:hover {
+            background: var(--primary-color);
+        }
+
+        .lightbox-prev { left: 20px; }
+        .lightbox-next { right: 20px; }
+
+        /* CTA Section */
+        .cta { padding: 80px 0; background: linear-gradient(135deg, var(--secondary-color), #6b3410); color: white; text-align: center; }
+        .cta h2 { font-size: 36px; margin-bottom: 15px; }
+        .cta p { font-size: 18px; margin-bottom: 30px; opacity: 0.95; }
+        .cta-phone { font-size: 32px; font-weight: 700; display: block; margin-bottom: 25px; }
+        .cta-phone:hover { color: var(--accent-color); }
+        .btn { display: inline-block; padding: 15px 35px; border-radius: var(--border-radius); font-weight: 600; font-size: 16px; cursor: pointer; transition: var(--transition); border: none; }
+        .btn-primary { background: var(--accent-color); color: var(--text-dark); }
+        .btn-primary:hover { background: #e8944a; transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+
+        /* Footer */
+        footer { background: var(--text-dark); color: white; padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-about h3 { font-size: 24px; margin-bottom: 15px; }
+        .footer-about p { color: rgba(255,255,255,0.7); margin-bottom: 20px; }
+        .footer-section h4 { font-size: 18px; margin-bottom: 20px; color: var(--accent-color); }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 10px; }
+        .footer-section a { color: rgba(255,255,255,0.7); }
+        .footer-section a:hover { color: white; }
+        .social-links { display: flex; gap: 15px; }
+        .social-link { width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; transition: var(--transition); }
+        .social-link:hover { background: var(--primary-color); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center; color: rgba(255,255,255,0.6); font-size: 14px; }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            nav > ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-white); flex-direction: column; padding: 15px 20px; box-shadow: var(--shadow-lg); gap: 0; }
+            nav > ul.active { display: flex; }
+            nav > ul > li { border-bottom: 1px solid #eee; width: 100%; }
+            nav > ul > li:last-child { border-bottom: none; padding-top: 10px; }
+            nav > ul > li > a { display: block; padding: 12px 0; font-size: 15px; }
+            .nav-cta { text-align: center; padding: 12px 20px !important; font-size: 15px !important; }
+            .mobile-menu-btn { display: block; }
+            .dropdown-menu { position: static; transform: none; box-shadow: none; background: var(--bg-light); border-radius: 0; padding: 0; opacity: 1; visibility: visible; display: none; margin-top: 5px; }
+            .nav-dropdown.active .dropdown-menu { display: block; }
+            .dropdown-menu a { padding: 10px 20px; }
+            .hero { padding: 140px 0 60px; }
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            .section-header h2 { font-size: 28px; }
+            .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+            .header-top .container { flex-direction: column; gap: 5px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .lightbox-nav { font-size: 30px; padding: 5px 15px; }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .gallery-item { aspect-ratio: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <span>Serving Washington, NJ & Surrounding Areas</span>
+                <a href="tel:(908) 763-6127">Call Now: (908) 763-6127</a>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="total lawn and tree website/logo.webp" alt="Total Tree Service Logo">
+                </a>
+                <nav>
+                    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency</a></li>
+                        <li class="nav-dropdown">
+                            <a href="#">Service Areas <span class="dropdown-arrow">▼</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="washington-tree-services.html">Washington</a></li>
+                                <li><a href="high-bridge-tree-services.html">High Bridge</a></li>
+                                <li><a href="bloomsbury-tree-services.html">Bloomsbury</a></li>
+                                <li><a href="belvidere-tree-services.html">Belvidere</a></li>
+                                <li><a href="oxford-tree-services.html">Oxford</a></li>
+                                <li><a href="independence-township-tree-services.html">Independence Township</a></li>
+                                <li><a href="white-tree-services.html">White</a></li>
+                                <li><a href="union-township-tree-services.html">Union Township</a></li>
+                                <li><a href="holland-township-tree-services.html">Holland Township</a></li>
+                                <li><a href="clinton-tree-services.html">Clinton</a></li>
+                                <li><a href="lebanon-tree-services.html">Lebanon</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="openPopupForm(); return false;" class="nav-cta">Free Estimate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Work Gallery</h1>
+            <p>Browse through examples of our professional tree service work throughout Washington, NJ and surrounding areas.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recent Projects</h2>
+                <p>From tree removal to stump grinding, see the quality of our work firsthand.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="total lawn and tree website/6c27b5e3-a908-4373-955f-3463e71ed6c5.webp" alt="Professional tree service work" loading="lazy">
+                    <div class="gallery-overlay"><span>Tree Service</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="total lawn and tree website/535996635_1579505299840110_4380204172511707903_n.jpg" alt="Tree removal project" loading="lazy">
+                    <div class="gallery-overlay"><span>Tree Removal</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="total lawn and tree website/01f2584b-7e9b-4ddc-8f55-b82b0ac91e59 (1).webp" alt="Emergency tree service" loading="lazy">
+                    <div class="gallery-overlay"><span>Emergency Service</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="total lawn and tree website/4c439c3f-af3b-4718-9623-b223d6178468.webp" alt="Stump grinding work" loading="lazy">
+                    <div class="gallery-overlay"><span>Stump Grinding</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="total lawn and tree website/4d9acb4f-50e0-482b-b66e-8b9f1a38982a.webp" alt="Land clearing project" loading="lazy">
+                    <div class="gallery-overlay"><span>Land Clearing</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="total lawn and tree website/4b172d8b-b8ba-4984-85ad-74e3c39798e2.webp" alt="Tree pruning work" loading="lazy">
+                    <div class="gallery-overlay"><span>Tree Pruning</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(6)">
+                    <img src="total lawn and tree website/500977475_24201680552762410_2040936644905835761_n.jpg" alt="Professional tree work" loading="lazy">
+                    <div class="gallery-overlay"><span>Tree Service</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(7)">
+                    <img src="total lawn and tree website/518288865_1547580903032550_6197962167927189552_n.jpg" alt="Tree cutting project" loading="lazy">
+                    <div class="gallery-overlay"><span>Tree Removal</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(8)">
+                    <img src="total lawn and tree website/536267818_1580500493073924_7556540168221699955_n.jpg" alt="Tree service crew at work" loading="lazy">
+                    <div class="gallery-overlay"><span>Our Team</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(9)">
+                    <img src="total lawn and tree website/449d3339-acfa-473a-aceb-5e891d7ad745.webp" alt="Tree trimming project" loading="lazy">
+                    <div class="gallery-overlay"><span>Tree Trimming</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(10)">
+                    <img src="total lawn and tree website/8facebe1-db5e-4f18-9b40-31ef6a774c8f.webp" alt="Tree cutting equipment" loading="lazy">
+                    <div class="gallery-overlay"><span>Equipment</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(11)">
+                    <img src="total lawn and tree website/c509c730-239b-41bb-9191-008be7fbbfc0.webp" alt="Tree service results" loading="lazy">
+                    <div class="gallery-overlay"><span>Results</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(12)">
+                    <img src="total lawn and tree website/e43f26c2-8147-4d0b-b4cc-31f990b746de.webp" alt="Professional tree care" loading="lazy">
+                    <div class="gallery-overlay"><span>Tree Care</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(13)">
+                    <img src="total lawn and tree website/af5fb923-c39a-45c0-9518-945940e11d22 (1).webp" alt="Tree work in progress" loading="lazy">
+                    <div class="gallery-overlay"><span>In Progress</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(14)">
+                    <img src="total lawn and tree website/4a2ecf8b-c9a7-4922-a915-a7f27ca40e39.webp" alt="Tree removal completed" loading="lazy">
+                    <div class="gallery-overlay"><span>Completed Work</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(15)">
+                    <img src="total lawn and tree website/540274174_1585771602546813_2933788894013179506_n.jpg" alt="Tree service professionals" loading="lazy">
+                    <div class="gallery-overlay"><span>Our Work</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <span class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)">&#10094;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Gallery image">
+        </div>
+        <span class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)">&#10095;</span>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact us today for a free, no-obligation estimate on your tree service needs.</p>
+            <a href="tel:(908) 763-6127" class="cta-phone">(908) 763-6127</a>
+            <a href="#" onclick="openPopupForm(); return false;" class="btn btn-primary">Request Free Estimate</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Total Tree Service</h3>
+                    <p>Professional tree services for Washington, NJ and surrounding areas. Licensed, insured, and committed to excellence.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Google">G</a>
+                        <a href="#" class="social-link" aria-label="Yelp">Y</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="tree-removal.html">Tree Removal</a></li>
+                        <li><a href="tree-pruning.html">Tree Pruning</a></li>
+                        <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                        <li><a href="land-clearing.html">Land Clearing</a></li>
+                        <li><a href="emergency-tree-service.html">Emergency Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li><a href="washington-tree-services.html">Washington</a></li>
+                        <li><a href="high-bridge-tree-services.html">High Bridge</a></li>
+                        <li><a href="bloomsbury-tree-services.html">Bloomsbury</a></li>
+                        <li><a href="belvidere-tree-services.html">Belvidere</a></li>
+                        <li><a href="oxford-tree-services.html">Oxford</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:(908) 763-6127">(908) 763-6127</a></li>
+                        <li><a href="mailto:info@totaltreeservicenj.com">info@totaltreeservicenj.com</a></li>
+                        <li>Washington, NJ</li>
+                        <li>Mon-Sat: 7AM-6PM</li>
+                        <li>24/7 Emergency</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Total Tree Service. All rights reserved. | Licensed & Insured | Serving Washington, NJ</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+
+        document.querySelectorAll('.nav-dropdown > a').forEach(function(dropdownLink) {
+            dropdownLink.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('active');
+                }
+            });
+        });
+
+        // Gallery images array
+        const galleryImages = [
+            'total lawn and tree website/6c27b5e3-a908-4373-955f-3463e71ed6c5.webp',
+            'total lawn and tree website/535996635_1579505299840110_4380204172511707903_n.jpg',
+            'total lawn and tree website/01f2584b-7e9b-4ddc-8f55-b82b0ac91e59 (1).webp',
+            'total lawn and tree website/4c439c3f-af3b-4718-9623-b223d6178468.webp',
+            'total lawn and tree website/4d9acb4f-50e0-482b-b66e-8b9f1a38982a.webp',
+            'total lawn and tree website/4b172d8b-b8ba-4984-85ad-74e3c39798e2.webp',
+            'total lawn and tree website/500977475_24201680552762410_2040936644905835761_n.jpg',
+            'total lawn and tree website/518288865_1547580903032550_6197962167927189552_n.jpg',
+            'total lawn and tree website/536267818_1580500493073924_7556540168221699955_n.jpg',
+            'total lawn and tree website/449d3339-acfa-473a-aceb-5e891d7ad745.webp',
+            'total lawn and tree website/8facebe1-db5e-4f18-9b40-31ef6a774c8f.webp',
+            'total lawn and tree website/c509c730-239b-41bb-9191-008be7fbbfc0.webp',
+            'total lawn and tree website/e43f26c2-8147-4d0b-b4cc-31f990b746de.webp',
+            'total lawn and tree website/af5fb923-c39a-45c0-9518-945940e11d22 (1).webp',
+            'total lawn and tree website/4a2ecf8b-c9a7-4922-a915-a7f27ca40e39.webp',
+            'total lawn and tree website/540274174_1585771602546813_2933788894013179506_n.jpg'
+        ];
+        let currentIndex = 0;
+
+        function openLightbox(index) {
+            currentIndex = index;
+            document.getElementById('lightbox-img').src = galleryImages[index];
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function navigateLightbox(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = galleryImages.length - 1;
+            if (currentIndex >= galleryImages.length) currentIndex = 0;
+            document.getElementById('lightbox-img').src = galleryImages[currentIndex];
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (!document.getElementById('lightbox').classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') navigateLightbox(-1);
+            if (e.key === 'ArrowRight') navigateLightbox(1);
+        });
+
+        // Close lightbox on background click
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+    </script>
+
+    <!-- Popup Form JavaScript -->
+    <script>
+        function openPopupForm() {
+            var popup = document.getElementById('popup-2xifeRhyvOkG1xtfxX99');
+            if (popup) {
+                popup.style.display = 'block';
+                popup.style.position = 'fixed';
+                popup.style.top = '50%';
+                popup.style.left = '50%';
+                popup.style.transform = 'translate(-50%, -50%)';
+                popup.style.zIndex = '9999';
+                popup.style.width = '90%';
+                popup.style.maxWidth = '500px';
+                popup.style.height = 'auto';
+                popup.style.minHeight = '500px';
+                popup.style.backgroundColor = 'white';
+                popup.style.borderRadius = '10px';
+                popup.style.boxShadow = '0 25px 50px rgba(0,0,0,0.3)';
+            }
+            var overlay = document.getElementById('popup-overlay');
+            if (!overlay) {
+                overlay = document.createElement('div');
+                overlay.id = 'popup-overlay';
+                overlay.style.position = 'fixed';
+                overlay.style.top = '0';
+                overlay.style.left = '0';
+                overlay.style.width = '100%';
+                overlay.style.height = '100%';
+                overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+                overlay.style.zIndex = '9998';
+                overlay.onclick = closePopupForm;
+                document.body.appendChild(overlay);
+            }
+            overlay.style.display = 'block';
+        }
+        function closePopupForm() {
+            var popup = document.getElementById('popup-2xifeRhyvOkG1xtfxX99');
+            var overlay = document.getElementById('popup-overlay');
+            if (popup) popup.style.display = 'none';
+            if (overlay) overlay.style.display = 'none';
+        }
+    </script>
+
+    <!-- Popup Form Embed (for CTA buttons) -->
+    <iframe
+    src="https://api.leadconnectorhq.com/widget/form/2xifeRhyvOkG1xtfxX99"
+    style="display:none;width:100%;height:100%;border:none;border-radius:0px"
+    id="popup-2xifeRhyvOkG1xtfxX99"
+    data-layout="{'id':'POPUP'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Tree Service Request "
+    data-height="466"
+    data-layout-iframe-id="popup-2xifeRhyvOkG1xtfxX99"
+    data-form-id="2xifeRhyvOkG1xtfxX99"
+    title="Tree Service Request "
+        >
+</iframe>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+
+</body>
+</html>
