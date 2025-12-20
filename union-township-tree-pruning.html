@@ -58,7 +58,7 @@
         .nav-dropdown > a { display: flex; align-items: center; gap: 5px; }
         .dropdown-arrow { font-size: 8px; transition: var(--transition); }
         .nav-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
-        .dropdown-menu { position: absolute; top: calc(100% + 5px); left: 50%; transform: translateX(-50%); background: var(--bg-white); min-width: 180px; box-shadow: var(--shadow-lg); border-radius: var(--border-radius); padding: 8px 0; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 1000; }
+        .dropdown-menu { position: absolute; top: calc(100% + 5px); left: 50%; transform: translateX(-50%); background: var(--bg-white); min-width: 200px; max-height: 400px; overflow-y: auto; box-shadow: var(--shadow-lg); border-radius: var(--border-radius); padding: 8px 0; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 1000; }
         .nav-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; }
         .dropdown-menu li { list-style: none; }
         .dropdown-menu a { display: block; padding: 10px 16px; color: var(--text-dark); white-space: nowrap; font-size: 14px; }
@@ -410,12 +410,17 @@
                 <div class="footer-section">
                     <h4>Service Areas</h4>
                     <ul>
-                        <li><a href="index.html">Washington</a></li>
-                        <li><a href="{{AREA_1_SLUG}}-tree-services.html">{{AREA_1}}</a></li>
-                        <li><a href="{{AREA_2_SLUG}}-tree-services.html">{{AREA_2}}</a></li>
-                        <li><a href="{{AREA_3_SLUG}}-tree-services.html">{{AREA_3}}</a></li>
-                        <li><a href="{{AREA_4_SLUG}}-tree-services.html">{{AREA_4}}</a></li>
-                        <li><a href="{{AREA_5_SLUG}}-tree-services.html">{{AREA_5}}</a></li>
+                        <li><a href="washington-tree-services.html">Washington</a></li>
+                        <li><a href="high-bridge-tree-services.html">High Bridge</a></li>
+                        <li><a href="bloomsbury-tree-services.html">Bloomsbury</a></li>
+                        <li><a href="belvidere-tree-services.html">Belvidere</a></li>
+                        <li><a href="oxford-tree-services.html">Oxford</a></li>
+                        <li><a href="independence-township-tree-services.html">Independence Twp</a></li>
+                        <li><a href="white-tree-services.html">White Twp</a></li>
+                        <li><a href="union-township-tree-services.html">Union Twp</a></li>
+                        <li><a href="holland-township-tree-services.html">Holland Twp</a></li>
+                        <li><a href="clinton-tree-services.html">Clinton</a></li>
+                        <li><a href="lebanon-tree-services.html">Lebanon</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
